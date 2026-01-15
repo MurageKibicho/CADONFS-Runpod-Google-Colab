@@ -25,7 +25,6 @@ tar zxvf cmake-$CMAKE_VERSION.tar.gz
 cd cmake-$CMAKE_VERSION
 sudo ./bootstrap
 
-
 #Run make
 sudo make
 sudo make install

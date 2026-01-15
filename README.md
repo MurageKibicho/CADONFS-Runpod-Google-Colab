@@ -52,5 +52,9 @@ chmod +x InstallCADO_Runpod_Ubuntu.sh
 ./InstallCADO_Runpod_Ubuntu.sh
 ```
 
+The installation will pause during g++ installation. You need to key in 0 and press enter to proceed.
+
+
+
 
 

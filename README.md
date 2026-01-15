@@ -57,7 +57,7 @@ chmod +x InstallCADO_Runpod_Ubuntu.sh
 
 The installation will pause during g++ installation. You need to key in 0 and press enter to proceed.
 
-## Running a DLP Instance for Bitcoin's prime
+## Running a DLP Relation Collection Instance for Bitcoin's prime
 
 1. Enter the cado-nfs directory
 ```
@@ -84,6 +84,14 @@ cd /home/cado-nfs
 nano MurageKibicho_Bitcoin.params
 ```
 You need to change the `builddir` line at the beginning to sth like `builddir= /home/cado-nfs/build/9f46df7e9cee`
+
+6. If everything is working correctly then this command should start collecting relations
+```
+./cado-nfs.py -dlp --parameters MurageKibicho_Bitcoin.params --ell 205115282021455665897114700593932402728804164701536103180137503955397371
+```
+
+## Importing Logarithms
+
 
 
 

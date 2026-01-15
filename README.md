@@ -67,7 +67,23 @@ cd /home/cado-nfs
 ```
 source cado-nfs.venv/bin/activate
 ```
-3. 
+3. Download our sample parameters file
+```
+wget https://raw.githubusercontent.com/MurageKibicho/CADONFS-Runpod-Google-Colab/refs/heads/main/MurageKibicho_Bitcoin.params
+```
+4. You need to copy the inner folder name from the `build` directory.
+```
+#Enter build folder
+cd build
+#Check the folder name. I got 9f46df7e9cee
+ls
+```
+5. Go back to the root cado-nfs folder and modify `MurageKibicho_Bitcoin.params`.
+```
+cd /home/cado-nfs
+nano MurageKibicho_Bitcoin.params
+```
+You need to change the `builddir` line at the beginning to sth like `builddir= /home/cado-nfs/build/9f46df7e9cee`
 
 
 

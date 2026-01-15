@@ -57,6 +57,11 @@ make -j$(nproc)
 make install
 ldconfig
 
+#Install mysql
+sudo apt install mysql-server -y
+
+#Start mysql service
+sudo /usr/sbin/mysqld &
 
 #cd cado-nfs folder
 cd /home/cado-nfs

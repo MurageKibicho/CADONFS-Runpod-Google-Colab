@@ -19,6 +19,9 @@ Outside Google Colab these are commmon errors encountered with CADO-NFS:
 
 I demonstrate workarounds in the [CADO-NFS DLP article](https://leetarxiv.substack.com/p/cado-nfs-dlp-comprehensive-tutorial).
 
+### Important note
+On Colab, for the bitcoin prime, it takes 1hr 20 minutes to generate logs
+On Runpod, it take 20 minutes and it only costs 0.06$/hr for the 22core, 4GB RAM cpu lol.
 
 
 

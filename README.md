@@ -104,8 +104,21 @@ cd CADONFS-Runpod-Google-Colab
 ```
 mv murage /home/
 ```
+4. Go to the build folder and change the name to the buildir `/home/murage/p95.parameters_snapshot.1 `
+```
+cd /home/cado-nfs/build
 
-
+#in my case the command is `mv 9f46df7e9cee c65b414053c9`
+mv old_folder_name c65b414053c9
+```
+5. Go back to the root folder
+```
+cd /home/cado-nfs
+```
+6. If everything is working correctly then this should yield a result
+```
+./cado-nfs.py /home/murage/p95.parameters_snapshot.1 target=546456546
+```
 
 
 

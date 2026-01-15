@@ -14,16 +14,16 @@ name = p95
 N = 115792089237316195423570985008687907853269984665640564039457584007908834671663
 sourcedir= /home/cado-nfs
 builddir= /home/cado-nfs/build/9f46df7e9cee
-workdir = /home/murage
+myworkdir = /home/murage
 
-tasks.workdir = $(workdir)
+tasks.workdir = $(myworkdir)
 tasks.execpath=$(builddir)
 slaves.hostnames = localhost
 slaves.nrclients = 2
 slaves.scriptpath = $(sourcedir)
 slaves.downloadretry = 10
 slaves.niceness = 10		
-slaves.basepath = $(workdir)/c95.wuclients
+slaves.basepath = $(myworkdir)/c95.wuclients
 
 ###########################################################################
 # Polynomial selection with Kleinjung's algorithm

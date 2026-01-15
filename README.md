@@ -40,7 +40,7 @@ It takes ~25 minutes for a clean Runpod installation.
 
 1. Enter the home directory
 ```
-cd home
+cd /home
 ```
 2. Download the raw installation bash script
 ```
@@ -56,6 +56,19 @@ chmod +x InstallCADO_Runpod_Ubuntu.sh
 ```
 
 The installation will pause during g++ installation. You need to key in 0 and press enter to proceed.
+
+## Running a DLP Instance for Bitcoin's prime
+
+1. Enter the cado-nfs directory
+```
+cd /home/cado-nfs
+```
+2. Activate the venv
+```
+source cado-nfs.venv/bin/activate
+```
+3. 
+
 
 
 

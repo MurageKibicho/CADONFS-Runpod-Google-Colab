@@ -91,6 +91,19 @@ You need to change the `builddir` line at the beginning to sth like `builddir= /
 ```
 
 ## Importing Logarithms
+This works on Runpod. Idk if it'll work for you.
+1. Clone the repo
+```
+git clone https://github.com/MurageKibicho/CADONFS-Runpod-Google-Colab.git
+```
+2. Navigate to the repo
+```
+cd CADONFS-Runpod-Google-Colab
+```
+3. Move the folder `murage` to home
+```
+mv murage /home/
+```
 
 
 

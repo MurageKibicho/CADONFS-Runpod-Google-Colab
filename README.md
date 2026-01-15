@@ -15,7 +15,8 @@ Outside Google Colab these are commmon errors encountered with CADO-NFS:
 3. Python Flask venv errors.
 4. Localhost 404's CADO-NFS errors.
 5. Failed individual logarithm errors.
-6. Distributed computing in the relation collection phase.
+6. MySQL may be absent or turned off.
+7. Distributed computing in the relation collection phase.
 
 I demonstrate workarounds in the [CADO-NFS DLP article](https://leetarxiv.substack.com/p/cado-nfs-dlp-comprehensive-tutorial).
 

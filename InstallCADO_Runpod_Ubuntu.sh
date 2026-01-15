@@ -25,6 +25,10 @@ tar zxvf cmake-$CMAKE_VERSION.tar.gz
 cd cmake-$CMAKE_VERSION
 sudo ./bootstrap
 
+#wget parameters
+#wget https://raw.githubusercontent.com/MurageKibicho/CADONFS-Runpod-Google-Colab/refs/heads/main/MurageKibicho_Bitcoin.params
+./cado-nfs.py -dlp --parameters MurageKibicho_Bitcoin.params --ell 205115282021455665897114700593932402728804164701536103180137503955397371
+
 #Run make
 sudo make
 sudo make install

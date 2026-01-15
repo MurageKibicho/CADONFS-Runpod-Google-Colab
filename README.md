@@ -2,7 +2,7 @@
 
 CADO-NFS is the world’s best factoring and discrete logarithm problem (DLP) solver. However, the documentation is scarce.
 
-This are my personal scripts to get CADO-NFS running on Google Colab or Runpod.
+These are my personal scripts to get CADO-NFS running on Google Colab or Runpod.
 
 - Absolute beginners should follow the Google Colab notebook.
 - 10x gigachad devs follow the Runpod/Local Ubuntu path.

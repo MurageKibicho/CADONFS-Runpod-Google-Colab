@@ -1,0 +1,9 @@
+# bad ideals for poly1=-1360093440600783189870+1008258525590998343*x-1089557227096*x^2-53710404*x^3+720*x^4
+# p=2, r=2 : 2 ideals among 3 are bad
+# I1=OK1.fractional_ideal([2, 1+180*alpha1]); # e=1 f=1
+# I_2_2_1_1 # 1 1
+# I2=OK1.fractional_ideal([2, 1+135*alpha1+20250*alpha1^2+729000*alpha1^3]); # e=2 f=1
+# I_2_2_1_2 # 2 1
+# 2 branches found
+2 2 4 1 -2 2
+2 2 6 1 1 -1

@@ -1,0 +1,31 @@
+# (fcc8206fc) /home/cado-nfs/build/c65b414053c9/filter/replay-dl -purged /home/murage/p95.purged.gz -ideals /home/murage/p95.ideal -his /home/murage/p95.history.gz -index /home/murage/p95.index.gz -out /home/murage/p95.sparse.bin
+# Compiled with gcc 10.5.0
+# Compilation flags (C) -Werror=all -Werror=extra -std=c99 -Wall -Wextra -O2  -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2
+# Compilation flags (C++) -Werror=extra -Werror=all -export-dynamic -std=c++20 -Wno-c++11-compat -Wall -Wextra -O2  -Wno-literal-suffix -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2
+# Output matrices will be written in binary format
+Sparse matrix has 58785 rows and 310903 cols
+Reading sparse matrix from /home/murage/p95.purged.gz
+# Read 1024 relations in 0.0s -- inf MB/s -- inf rels/s
+# Read 2048 relations in 0.0s -- inf MB/s -- inf rels/s
+# Read 4096 relations in 0.0s -- inf MB/s -- inf rels/s
+# Read 8192 relations in 0.0s -- 38.1 MB/s -- 422686.9 rels/s
+# Read 16384 relations in 0.0s -- 48.8 MB/s -- 541497.1 rels/s
+# Read 32768 relations in 0.0s -- 68.3 MB/s -- 755204.2 rels/s
+# Done: Read 58785 relations in 0.1s -- 70.6 MB/s -- 786537.6 rels/s
+The biggest index appearing in a relation is 310903
+Reading row additions
+# Read 1024 row additions in 0.0s -- inf lines/s
+# Read 2048 row additions in 0.0s -- inf lines/s
+# Read 4096 row additions in 0.0s -- 386993.1 lines/s
+# Read 8192 row additions in 0.0s -- 514186.1 lines/s
+# Read 16384 row additions in 0.0s -- 621754.8 lines/s
+# Read 32768 row additions in 0.0s -- 691964.6 lines/s
+# Read 65536 row additions in 0.1s -- 714780.6 lines/s
+# Done: Read 115096 row additions in 0.2s -- 642385.5 lines/s
+Renumbering columns (including sorting w.r.t. weight)
+Sorting 19313 columns by decreasing weight
+Sparse submatrix: nrows=19315 ncols=19313
+Writing sparse representation to /home/murage/p95.sparse.bin
+# Writing matrix took 0.1s
+# Weight of the sparse submatrix: 1938780
+Total usage: time 0s (cpu), 0s (wct) ; memory 176MiB, peak 233MiB

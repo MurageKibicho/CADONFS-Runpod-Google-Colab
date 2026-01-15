@@ -1,0 +1,66 @@
+# Command for work unit: p95_polyselect1_0-10000
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect -P 15000 -N 115792089237316195423570985008687907853269984665640564039457584007908834671663 -degree 4 -t 4 -admin 0 -admax 10000 -incr 60 -nq 2000 > /home/murage/p95.polyselect1.0-10000
+# Command for work unit: p95_polyselect1_10000-20000
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect -P 15000 -N 115792089237316195423570985008687907853269984665640564039457584007908834671663 -degree 4 -t 4 -admin 10000 -admax 20000 -incr 60 -nq 2000 > /home/murage/p95.polyselect1.10000-20000
+# Command for work unit: p95_polyselect1_20000-30000
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect -P 15000 -N 115792089237316195423570985008687907853269984665640564039457584007908834671663 -degree 4 -t 4 -admin 20000 -admax 30000 -incr 60 -nq 2000 > /home/murage/p95.polyselect1.20000-30000
+# Command for work unit: p95_polyselect1_30000-40000
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect -P 15000 -N 115792089237316195423570985008687907853269984665640564039457584007908834671663 -degree 4 -t 4 -admin 30000 -admax 40000 -incr 60 -nq 2000 > /home/murage/p95.polyselect1.30000-40000
+# Command for work unit: p95_polyselect1_40000-50000
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect -P 15000 -N 115792089237316195423570985008687907853269984665640564039457584007908834671663 -degree 4 -t 4 -admin 40000 -admax 50000 -incr 60 -nq 2000 > /home/murage/p95.polyselect1.40000-50000
+# Command for work unit: p95_polyselect2_0-1
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect_ropt -t 4 -inputpolys /home/murage/p95.polyselect2.raw_0 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0 > /home/murage/p95.polyselect2.opt_0
+# Command for work unit: p95_polyselect2_8-9
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect_ropt -t 4 -inputpolys /home/murage/p95.polyselect2.raw_8 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0 > /home/murage/p95.polyselect2.opt_8
+# Command for work unit: p95_polyselect2_16-17
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect_ropt -t 4 -inputpolys /home/murage/p95.polyselect2.raw_16 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0 > /home/murage/p95.polyselect2.opt_16
+# Command for work unit: p95_polyselect2_24-25
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect_ropt -t 4 -inputpolys /home/murage/p95.polyselect2.raw_24 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0 > /home/murage/p95.polyselect2.opt_24
+# Command for work unit: p95_polyselect2_32-33
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect_ropt -t 4 -inputpolys /home/murage/p95.polyselect2.raw_32 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0 > /home/murage/p95.polyselect2.opt_32
+# Command for work unit: p95_polyselect2_40-41
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect_ropt -t 4 -inputpolys /home/murage/p95.polyselect2.raw_40 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0 > /home/murage/p95.polyselect2.opt_40
+# Command for work unit: p95_polyselect2_48-49
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect_ropt -t 4 -inputpolys /home/murage/p95.polyselect2.raw_48 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0 > /home/murage/p95.polyselect2.opt_48
+# Command for work unit: p95_polyselect2_56-57
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect_ropt -t 4 -inputpolys /home/murage/p95.polyselect2.raw_56 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0 > /home/murage/p95.polyselect2.opt_56
+# Command for work unit: p95_polyselect2_64-65
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect_ropt -t 4 -inputpolys /home/murage/p95.polyselect2.raw_64 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0 > /home/murage/p95.polyselect2.opt_64
+# Command for work unit: p95_polyselect2_72-73
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect_ropt -t 4 -inputpolys /home/murage/p95.polyselect2.raw_72 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0 > /home/murage/p95.polyselect2.opt_72
+# Command for work unit: p95_polyselect2_80-81
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect_ropt -t 4 -inputpolys /home/murage/p95.polyselect2.raw_80 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0 > /home/murage/p95.polyselect2.opt_80
+# Command for work unit: p95_polyselect2_88-89
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect_ropt -t 4 -inputpolys /home/murage/p95.polyselect2.raw_88 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0 > /home/murage/p95.polyselect2.opt_88
+# Command for work unit: p95_polyselect2_96-97
+/home/cado-nfs/build/c65b414053c9/polyselect/polyselect_ropt -t 4 -inputpolys /home/murage/p95.polyselect2.raw_96 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0 > /home/murage/p95.polyselect2.opt_96
+# Command for work unit: p95_sieving_120000-140000
+/home/cado-nfs/build/c65b414053c9/sieve/las -poly /home/murage/p95.poly -q0 120000 -I 12 -q1 140000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/p95.roots1.gz -out /home/murage/p95.120000-140000.gz -t 4 -stats-stderr
+# Command for work unit: p95_sieving_140000-160000
+/home/cado-nfs/build/c65b414053c9/sieve/las -poly /home/murage/p95.poly -q0 140000 -I 12 -q1 160000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/p95.roots1.gz -out /home/murage/p95.140000-160000.gz -t 4 -stats-stderr
+# Command for work unit: p95_sieving_160000-180000
+/home/cado-nfs/build/c65b414053c9/sieve/las -poly /home/murage/p95.poly -q0 160000 -I 12 -q1 180000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/p95.roots1.gz -out /home/murage/p95.160000-180000.gz -t 4 -stats-stderr
+# Command for work unit: p95_sieving_180000-200000
+/home/cado-nfs/build/c65b414053c9/sieve/las -poly /home/murage/p95.poly -q0 180000 -I 12 -q1 200000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/p95.roots1.gz -out /home/murage/p95.180000-200000.gz -t 4 -stats-stderr
+# Command for work unit: p95_sieving_200000-220000
+/home/cado-nfs/build/c65b414053c9/sieve/las -poly /home/murage/p95.poly -q0 200000 -I 12 -q1 220000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/p95.roots1.gz -out /home/murage/p95.200000-220000.gz -t 4 -stats-stderr
+# Command for work unit: p95_sieving_220000-240000
+/home/cado-nfs/build/c65b414053c9/sieve/las -poly /home/murage/p95.poly -q0 220000 -I 12 -q1 240000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/p95.roots1.gz -out /home/murage/p95.220000-240000.gz -t 4 -stats-stderr
+# Command for work unit: p95_sieving_240000-260000
+/home/cado-nfs/build/c65b414053c9/sieve/las -poly /home/murage/p95.poly -q0 240000 -I 12 -q1 260000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/p95.roots1.gz -out /home/murage/p95.240000-260000.gz -t 4 -stats-stderr
+# Command for work unit: p95_sieving_260000-280000
+/home/cado-nfs/build/c65b414053c9/sieve/las -poly /home/murage/p95.poly -q0 260000 -I 12 -q1 280000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/p95.roots1.gz -out /home/murage/p95.260000-280000.gz -t 4 -stats-stderr
+# Command for work unit: p95_sieving_280000-300000
+/home/cado-nfs/build/c65b414053c9/sieve/las -poly /home/murage/p95.poly -q0 280000 -I 12 -q1 300000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/p95.roots1.gz -out /home/murage/p95.280000-300000.gz -t 4 -stats-stderr
+# Command for work unit: p95_sieving_300000-320000
+/home/cado-nfs/build/c65b414053c9/sieve/las -poly /home/murage/p95.poly -q0 300000 -I 12 -q1 320000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/p95.roots1.gz -out /home/murage/p95.300000-320000.gz -t 4 -stats-stderr
+# Command for work unit: p95_sieving_320000-340000
+/home/cado-nfs/build/c65b414053c9/sieve/las -poly /home/murage/p95.poly -q0 320000 -I 12 -q1 340000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/p95.roots1.gz -out /home/murage/p95.320000-340000.gz -t 4 -stats-stderr
+# Command for work unit: p95_sieving_340000-360000
+/home/cado-nfs/build/c65b414053c9/sieve/las -poly /home/murage/p95.poly -q0 340000 -I 12 -q1 360000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/p95.roots1.gz -out /home/murage/p95.340000-360000.gz -t 4 -stats-stderr
+# Command for work unit: p95_sieving_360000-380000
+/home/cado-nfs/build/c65b414053c9/sieve/las -poly /home/murage/p95.poly -q0 360000 -I 12 -q1 380000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/p95.roots1.gz -out /home/murage/p95.360000-380000.gz -t 4 -stats-stderr
+# Command for work unit: p95_sieving_380000-400000
+/home/cado-nfs/build/c65b414053c9/sieve/las -poly /home/murage/p95.poly -q0 380000 -I 12 -q1 400000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/p95.roots1.gz -out /home/murage/p95.380000-400000.gz -t 4 -stats-stderr
+# Command for work unit: p95_sieving_400000-420000
+/home/cado-nfs/build/c65b414053c9/sieve/las -poly /home/murage/p95.poly -q0 400000 -I 12 -q1 420000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/p95.roots1.gz -out /home/murage/p95.400000-420000.gz -t 4 -stats-stderr

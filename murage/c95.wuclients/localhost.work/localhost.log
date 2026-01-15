@@ -1,0 +1,221 @@
+Starting client localhost
+Python version is 3.8.10
+Args ['/home/cado-nfs/cado-nfs-client.py', '--server', 'https://localhost:36609', '--daemon', '--clientid', 'localhost', '--basepath', '/home/murage/c95.wuclients', '--downloadretry', '10', '--niceness', '10', '--certsha1', '8b59dd417529c57c7081a533832a553d5c404365']
+Downloading certificate from https://localhost:36609
+Certificate SHA1 hash matches
+Writing certificate to file /home/murage/c95.wuclients/download/server.8b59dd417529c57c7081a533832a553d5c404365.pem
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost458903515
+Download failed, {"code": 404, "name": "Not Found", "description": "No work available"}
+Waiting 0.625 seconds before retrying
+Starting client localhost
+Python version is 3.8.10
+Args ['/home/cado-nfs/cado-nfs-client.py', '--server', 'https://localhost:36609', '--daemon', '--clientid', 'localhost', '--basepath', '/home/murage/c95.wuclients', '--downloadretry', '10', '--niceness', '10', '--certsha1', '8b59dd417529c57c7081a533832a553d5c404365']
+Using certificate stored in file /home/murage/c95.wuclients/download/server.8b59dd417529c57c7081a533832a553d5c404365.pem
+Certificate SHA1 hash matches
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost401204880
+Download failed, {"code": 404, "name": "Not Found", "description": "No work available"}
+Waiting 0.625 seconds before retrying
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost401204880
+Opened URL https://localhost:36609 after 0.625 seconds wait
+Downloading https://localhost:36609/file/polyselect to /home/murage/c95.wuclients/download/polyselect474818926
+Setting executable flag for /home/murage/c95.wuclients/download/polyselect
+Result file /home/murage/c95.wuclients/localhost.work/p95.polyselect1.0-10000 does not exist
+file polyselect resolved to /home/murage/c95.wuclients/download/polyselect
+Running /home/murage/c95.wuclients/download/polyselect -P 15000 -N 115792089237316195423570985008687907853269984665640564039457584007908834671663 -degree 4 -t 4 -admin 0 -admax 10000 -incr 60 -nq 2000
+[Thu Jan 15 10:20:44 2026] Subprocess has PID 69622
+Attaching file /home/murage/c95.wuclients/localhost.work/p95.polyselect1.0-10000 [fid=RESULT0] to upload
+Uploading results: backlog has 1 entries
+	p95_polyselect1_0-10000  -->  https://localhost:36609
+Upload of p95_polyselect1_0-10000 succeeded.
+Cleaning up for workunit p95_polyselect1_0-10000
+Removing result file /home/murage/c95.wuclients/localhost.work/p95.polyselect1.0-10000
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost163741665
+/home/murage/c95.wuclients/download/polyselect already exists, not downloading
+Result file /home/murage/c95.wuclients/localhost.work/p95.polyselect1.20000-30000 does not exist
+file polyselect resolved to /home/murage/c95.wuclients/download/polyselect
+Running /home/murage/c95.wuclients/download/polyselect -P 15000 -N 115792089237316195423570985008687907853269984665640564039457584007908834671663 -degree 4 -t 4 -admin 20000 -admax 30000 -incr 60 -nq 2000
+[Thu Jan 15 10:21:05 2026] Subprocess has PID 70228
+Attaching file /home/murage/c95.wuclients/localhost.work/p95.polyselect1.20000-30000 [fid=RESULT0] to upload
+Uploading results: backlog has 1 entries
+	p95_polyselect1_20000-30000  -->  https://localhost:36609
+Upload of p95_polyselect1_20000-30000 succeeded.
+Cleaning up for workunit p95_polyselect1_20000-30000
+Removing result file /home/murage/c95.wuclients/localhost.work/p95.polyselect1.20000-30000
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost768966250
+Download failed, {"code": 404, "name": "Not Found", "description": "No work available"}
+Waiting 0.625 seconds before retrying
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost768966250
+Download failed, {"code": 404, "name": "Not Found", "description": "No work available"}
+Waiting 1.25 seconds before retrying (I have been waiting for 0.625 seconds)
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost768966250
+Download failed, {"code": 404, "name": "Not Found", "description": "No work available"}
+Waiting 2.5 seconds before retrying (I have been waiting for 1.875 seconds)
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost768966250
+Download failed, {"code": 404, "name": "Not Found", "description": "No work available"}
+Waiting 5.0 seconds before retrying (I have been waiting for 4.375 seconds)
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost768966250
+Download failed, {"code": 404, "name": "Not Found", "description": "No work available"}
+Waiting 10.0 seconds before retrying (I have been waiting for 9.375 seconds)
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost768966250
+Opened URL https://localhost:36609 after 19.375 seconds wait
+/home/murage/c95.wuclients/download/polyselect_ropt already exists, not downloading
+Downloading https://localhost:36609/file/p95.polyselect2.raw_24 to /home/murage/c95.wuclients/download/p95.polyselect2.raw_24425570304
+Result file /home/murage/c95.wuclients/localhost.work/p95.polyselect2.opt_24 does not exist
+file polyselect_ropt resolved to /home/murage/c95.wuclients/download/polyselect_ropt
+Running /home/murage/c95.wuclients/download/polyselect_ropt -t 4 -inputpolys /home/murage/c95.wuclients/download/p95.polyselect2.raw_24 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0
+[Thu Jan 15 10:21:51 2026] Subprocess has PID 71567
+Attaching file /home/murage/c95.wuclients/localhost.work/p95.polyselect2.opt_24 [fid=RESULT0] to upload
+Uploading results: backlog has 1 entries
+	p95_polyselect2_24-25  -->  https://localhost:36609
+Upload of p95_polyselect2_24-25 succeeded.
+Cleaning up for workunit p95_polyselect2_24-25
+Removing result file /home/murage/c95.wuclients/localhost.work/p95.polyselect2.opt_24
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost736679860
+/home/murage/c95.wuclients/download/polyselect_ropt already exists, not downloading
+Downloading https://localhost:36609/file/p95.polyselect2.raw_40 to /home/murage/c95.wuclients/download/p95.polyselect2.raw_401026107481
+Result file /home/murage/c95.wuclients/localhost.work/p95.polyselect2.opt_40 does not exist
+file polyselect_ropt resolved to /home/murage/c95.wuclients/download/polyselect_ropt
+Running /home/murage/c95.wuclients/download/polyselect_ropt -t 4 -inputpolys /home/murage/c95.wuclients/download/p95.polyselect2.raw_40 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0
+[Thu Jan 15 10:21:55 2026] Subprocess has PID 71698
+Attaching file /home/murage/c95.wuclients/localhost.work/p95.polyselect2.opt_40 [fid=RESULT0] to upload
+Uploading results: backlog has 1 entries
+	p95_polyselect2_40-41  -->  https://localhost:36609
+Upload of p95_polyselect2_40-41 succeeded.
+Cleaning up for workunit p95_polyselect2_40-41
+Removing result file /home/murage/c95.wuclients/localhost.work/p95.polyselect2.opt_40
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost511439969
+/home/murage/c95.wuclients/download/polyselect_ropt already exists, not downloading
+Downloading https://localhost:36609/file/p95.polyselect2.raw_56 to /home/murage/c95.wuclients/download/p95.polyselect2.raw_561021780748
+Result file /home/murage/c95.wuclients/localhost.work/p95.polyselect2.opt_56 does not exist
+file polyselect_ropt resolved to /home/murage/c95.wuclients/download/polyselect_ropt
+Running /home/murage/c95.wuclients/download/polyselect_ropt -t 4 -inputpolys /home/murage/c95.wuclients/download/p95.polyselect2.raw_56 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0
+[Thu Jan 15 10:21:58 2026] Subprocess has PID 71791
+Attaching file /home/murage/c95.wuclients/localhost.work/p95.polyselect2.opt_56 [fid=RESULT0] to upload
+Uploading results: backlog has 1 entries
+	p95_polyselect2_56-57  -->  https://localhost:36609
+Upload of p95_polyselect2_56-57 succeeded.
+Cleaning up for workunit p95_polyselect2_56-57
+Removing result file /home/murage/c95.wuclients/localhost.work/p95.polyselect2.opt_56
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost590123527
+/home/murage/c95.wuclients/download/polyselect_ropt already exists, not downloading
+Downloading https://localhost:36609/file/p95.polyselect2.raw_64 to /home/murage/c95.wuclients/download/p95.polyselect2.raw_6468003291
+Result file /home/murage/c95.wuclients/localhost.work/p95.polyselect2.opt_64 does not exist
+file polyselect_ropt resolved to /home/murage/c95.wuclients/download/polyselect_ropt
+Running /home/murage/c95.wuclients/download/polyselect_ropt -t 4 -inputpolys /home/murage/c95.wuclients/download/p95.polyselect2.raw_64 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0
+[Thu Jan 15 10:22:02 2026] Subprocess has PID 71921
+Attaching file /home/murage/c95.wuclients/localhost.work/p95.polyselect2.opt_64 [fid=RESULT0] to upload
+Uploading results: backlog has 1 entries
+	p95_polyselect2_64-65  -->  https://localhost:36609
+Upload of p95_polyselect2_64-65 succeeded.
+Cleaning up for workunit p95_polyselect2_64-65
+Removing result file /home/murage/c95.wuclients/localhost.work/p95.polyselect2.opt_64
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost747861341
+/home/murage/c95.wuclients/download/polyselect_ropt already exists, not downloading
+Downloading https://localhost:36609/file/p95.polyselect2.raw_88 to /home/murage/c95.wuclients/download/p95.polyselect2.raw_88874411300
+Result file /home/murage/c95.wuclients/localhost.work/p95.polyselect2.opt_88 does not exist
+file polyselect_ropt resolved to /home/murage/c95.wuclients/download/polyselect_ropt
+Running /home/murage/c95.wuclients/download/polyselect_ropt -t 4 -inputpolys /home/murage/c95.wuclients/download/p95.polyselect2.raw_88 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0
+[Thu Jan 15 10:22:06 2026] Subprocess has PID 72060
+Attaching file /home/murage/c95.wuclients/localhost.work/p95.polyselect2.opt_88 [fid=RESULT0] to upload
+Uploading results: backlog has 1 entries
+	p95_polyselect2_88-89  -->  https://localhost:36609
+Upload of p95_polyselect2_88-89 succeeded.
+Cleaning up for workunit p95_polyselect2_88-89
+Removing result file /home/murage/c95.wuclients/localhost.work/p95.polyselect2.opt_88
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost493201677
+Download failed, {"code": 404, "name": "Not Found", "description": "No work available"}
+Waiting 0.625 seconds before retrying
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost493201677
+Download failed, {"code": 404, "name": "Not Found", "description": "No work available"}
+Waiting 1.25 seconds before retrying (I have been waiting for 0.625 seconds)
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost493201677
+Download failed, {"code": 404, "name": "Not Found", "description": "No work available"}
+Waiting 2.5 seconds before retrying (I have been waiting for 1.875 seconds)
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost493201677
+Opened URL https://localhost:36609 after 4.375 seconds wait
+/home/murage/c95.wuclients/download/las already exists, not downloading
+/home/murage/c95.wuclients/download/p95.poly already exists, not downloading
+/home/murage/c95.wuclients/download/p95.roots1.gz already exists, not downloading
+Result file /home/murage/c95.wuclients/localhost.work/p95.140000-160000.gz does not exist
+file las resolved to /home/murage/c95.wuclients/download/las
+Running /home/murage/c95.wuclients/download/las -poly /home/murage/c95.wuclients/download/p95.poly -q0 140000 -I 12 -q1 160000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/c95.wuclients/download/p95.roots1.gz -out /home/murage/c95.wuclients/localhost.work/p95.140000-160000.gz -t 4 -stats-stderr
+[Thu Jan 15 10:22:15 2026] Subprocess has PID 72469
+Attaching file /home/murage/c95.wuclients/localhost.work/p95.140000-160000.gz [fid=RESULT0] to upload
+Attaching stderr for command 0 to upload
+Uploading results: backlog has 1 entries
+	p95_sieving_140000-160000  -->  https://localhost:36609
+Upload of p95_sieving_140000-160000 succeeded.
+Cleaning up for workunit p95_sieving_140000-160000
+Removing result file /home/murage/c95.wuclients/localhost.work/p95.140000-160000.gz
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost604793577
+/home/murage/c95.wuclients/download/las already exists, not downloading
+/home/murage/c95.wuclients/download/p95.poly already exists, not downloading
+/home/murage/c95.wuclients/download/p95.roots1.gz already exists, not downloading
+Result file /home/murage/c95.wuclients/localhost.work/p95.180000-200000.gz does not exist
+file las resolved to /home/murage/c95.wuclients/download/las
+Running /home/murage/c95.wuclients/download/las -poly /home/murage/c95.wuclients/download/p95.poly -q0 180000 -I 12 -q1 200000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/c95.wuclients/download/p95.roots1.gz -out /home/murage/c95.wuclients/localhost.work/p95.180000-200000.gz -t 4 -stats-stderr
+[Thu Jan 15 10:27:26 2026] Subprocess has PID 81830
+Attaching file /home/murage/c95.wuclients/localhost.work/p95.180000-200000.gz [fid=RESULT0] to upload
+Attaching stderr for command 0 to upload
+Uploading results: backlog has 1 entries
+	p95_sieving_180000-200000  -->  https://localhost:36609
+Upload of p95_sieving_180000-200000 succeeded.
+Cleaning up for workunit p95_sieving_180000-200000
+Removing result file /home/murage/c95.wuclients/localhost.work/p95.180000-200000.gz
+Downloading https://localhost:36609/workunit to /home/murage/c95.wuclients/download/WU.localhost100738426
+/home/murage/c95.wuclients/download/las already exists, not downloading
+/home/murage/c95.wuclients/download/p95.poly already exists, not downloading
+/home/murage/c95.wuclients/download/p95.roots1.gz already exists, not downloading
+Result file /home/murage/c95.wuclients/localhost.work/p95.220000-240000.gz does not exist
+file las resolved to /home/murage/c95.wuclients/download/las
+Running /home/murage/c95.wuclients/download/las -poly /home/murage/c95.wuclients/download/p95.poly -q0 220000 -I 12 -q1 240000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/c95.wuclients/download/p95.roots1.gz -out /home/murage/c95.wuclients/localhost.work/p95.220000-240000.gz -t 4 -stats-stderr
+[Thu Jan 15 10:32:14 2026] Subprocess has PID 91880
+[Thu Jan 15 10:32:24 2026] KeyboardInterrupt received, killing child process with PID 91880
+[Thu Jan 15 10:32:24 2026] Terminated command resulted in exit code -15
+Traceback (most recent call last):
+  File "/home/cado-nfs/cado-nfs-client.py", line 1982, in <module>
+    client_ok = client.process()
+  File "/home/cado-nfs/cado-nfs-client.py", line 1697, in process
+    processor.run_commands()
+  File "/home/cado-nfs/cado-nfs-client.py", line 855, in run_commands
+    rc, stdout, stderr = run_command(command,
+  File "/home/cado-nfs/cado-nfs-client.py", line 421, in run_command
+    (stdout, stderr) = child.communicate()
+  File "/usr/lib/python3.8/subprocess.py", line 1028, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1868, in _communicate
+    ready = selector.select(timeout)
+  File "/usr/lib/python3.8/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+Starting client localhost
+Python version is 3.8.10
+Args ['/home/cado-nfs/cado-nfs-client.py', '--server', 'https://localhost:36609', '--daemon', '--clientid', 'localhost', '--basepath', '/home/murage/c95.wuclients', '--downloadretry', '10', '--niceness', '10', '--certsha1', '8b59dd417529c57c7081a533832a553d5c404365']
+Using certificate stored in file /home/murage/c95.wuclients/download/server.8b59dd417529c57c7081a533832a553d5c404365.pem
+Certificate SHA1 hash matches
+/home/murage/c95.wuclients/download/WU.localhost already exists, not downloading
+/home/murage/c95.wuclients/download/las already exists, not downloading
+/home/murage/c95.wuclients/download/p95.poly already exists, not downloading
+/home/murage/c95.wuclients/download/p95.roots1.gz already exists, not downloading
+Result file /home/murage/c95.wuclients/localhost.work/p95.220000-240000.gz does not exist
+file las resolved to /home/murage/c95.wuclients/download/las
+Running /home/murage/c95.wuclients/download/las -poly /home/murage/c95.wuclients/download/p95.poly -q0 220000 -I 12 -q1 240000 -lim0 300000 -lim1 300000 -lpb0 21 -lpb1 21 -mfb0 42 -mfb1 42 -lambda0 2.2 -lambda1 2.2 -fb1 /home/murage/c95.wuclients/download/p95.roots1.gz -out /home/murage/c95.wuclients/localhost.work/p95.220000-240000.gz -t 4 -stats-stderr
+[Thu Jan 15 11:09:47 2026] Subprocess has PID 135726
+[Thu Jan 15 11:09:48 2026] KeyboardInterrupt received, killing child process with PID 135726
+[Thu Jan 15 11:09:48 2026] Terminated command resulted in exit code -15
+Traceback (most recent call last):
+  File "/home/cado-nfs/cado-nfs-client.py", line 1982, in <module>
+    client_ok = client.process()
+  File "/home/cado-nfs/cado-nfs-client.py", line 1697, in process
+    processor.run_commands()
+  File "/home/cado-nfs/cado-nfs-client.py", line 855, in run_commands
+    rc, stdout, stderr = run_command(command,
+  File "/home/cado-nfs/cado-nfs-client.py", line 421, in run_command
+    (stdout, stderr) = child.communicate()
+  File "/usr/lib/python3.8/subprocess.py", line 1028, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/usr/lib/python3.8/subprocess.py", line 1868, in _communicate
+    ready = selector.select(timeout)
+  File "/usr/lib/python3.8/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt

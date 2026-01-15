@@ -1,0 +1,134 @@
+# (fcc8206fc) /home/murage/c95.wuclients/download/polyselect_ropt -t 4 -inputpolys /home/murage/c95.wuclients/download/p95.polyselect2.raw_96 -ropteffort 0.01 -area 1006632960000.0 -Bf 2097152.0 -Bg 2097152.0
+# Compiled with gcc 10.5.0
+# Compilation flags (C) -Werror=all -Werror=extra -std=c99 -Wall -Wextra -O2  -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2
+# Compilation flags (C++) -Werror=extra -Werror=all -export-dynamic -std=c++20 -Wno-c++11-compat -Wall -Wextra -O2  -Wno-literal-suffix -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2
+# Info: Will use 4 threads
+# Info: ropteffort = 0
+# Info: L1_cachesize = 32768, size_tune_sievearray = 16384
+# Reading polynomials from /home/murage/c95.wuclients/download/p95.polyselect2.raw_96
+# 4 polynomial(s) read.
+# Info: Using OpenMP with 4 thread(s)
+
+### input polynomial 0 ###
+# n: 115792089237316195423570985008687907853269984665640564039457584007908834671663
+# Y0: -2111749227639029740
+# Y1: 8966010328301
+# c0: -3550510207309014117
+# c1: 6502552695136467
+# c2: 410704861881
+# c3: -86062024
+# c4: 6180
+# skew: 6736.253
+# # side 1 lognorm 25.96, exp_E 23.09, alpha -0.42 (proj -1.63), 2 real roots
+
+### input polynomial 2 ###
+# n: 115792089237316195423570985008687907853269984665640564039457584007908834671663
+# Y0: -1582136158605275989
+# Y1: 8715645437797
+# c0: 697043537119264370
+# c1: 38705078264721264
+# c2: -208020271517
+# c3: -17174
+# c4: 18480
+# skew: 9265.724
+# # side 1 lognorm 27.55, exp_E 23.29, alpha -0.01 (proj -2.18), 2 real roots
+
+### input polynomial 3 ###
+# n: 115792089237316195423570985008687907853269984665640564039457584007908834671663
+# Y0: -313777929436554119
+# Y1: 425424721288249
+# c0: 4352078750501945458
+# c1: -297130093291354
+# c2: -1441562990771
+# c3: 428226770
+# c4: 48840
+# skew: 2672.961
+# # side 1 lognorm 26.38, exp_E 23.09, alpha -0.15 (proj -1.92), 2 real roots
+
+### input polynomial 1 ###
+# n: 115792089237316195423570985008687907853269984665640564039457584007908834671663
+# Y0: -2091817604034758703
+# Y1: 10367389963237
+# c0: -3658824202483460168
+# c1: 10856477831074039
+# c2: 1549775791707
+# c3: -517195830
+# c4: 63000
+# skew: 3652.401
+# # side 1 lognorm 27.10, exp_E 23.29, alpha -3.03 (proj -2.57), 2 real roots
+
+### root-optimized polynomial 3 ###
+n: 115792089237316195423570985008687907853269984665640564039457584007908834671663
+Y0: 589398753858398508
+Y1: 425424721288249
+c0: -303584300343272555165
+c1: -808952642370557649
+c2: -422818138898730
+c3: 842976050
+c4: 48840
+skew: 3922.997
+# side 1 lognorm 31.79, E 28.03, alpha -3.76 (proj -1.69), 4 real roots
+# side 1 MurphyE(Bf=2.097e+06,Bg=2.097e+06,area=1.007e+12)=8.563e-07
+### Best MurphyE so far is 8.563e-07, av. exp_E 23.19, av. E 28.03
+
+### root-optimized polynomial 1 ###
+n: 115792089237316195423570985008687907853269984665640564039457584007908834671663
+Y0: -2061067925403797761
+Y1: 10367389963237
+c0: -28260784666627428787890
+c1: 155298995949011059
+c2: 273092264367
+c3: 230236170
+c4: 63000
+skew: 27372.742
+# side 1 lognorm 30.81, E 25.66, alpha -5.15 (proj -2.57), 2 real roots
+# side 1 MurphyE(Bf=2.097e+06,Bg=2.097e+06,area=1.007e+12)=1.260e-06
+### Best MurphyE so far is 1.260e-06, av. exp_E 23.19, av. E 26.85
+
+### root-optimized polynomial 0 ###
+n: 115792089237316195423570985008687907853269984665640564039457584007908834671663
+Y0: -2135849863401502828
+Y1: 8966010328301
+c0: -37359266796136530197493
+c1: -1977139123683924541
+c2: 10338635107238
+c3: -152509384
+c4: 6180
+skew: 55260.052
+# side 1 lognorm 30.05, E 26.21, alpha -3.85 (proj -1.25), 2 real roots
+# side 1 MurphyE(Bf=2.097e+06,Bg=2.097e+06,area=1.007e+12)=1.178e-06
+### Best MurphyE so far is 1.260e-06, av. exp_E 23.19, av. E 26.63
+
+### root-optimized polynomial 2 ###
+n: 115792089237316195423570985008687907853269984665640564039457584007908834671663
+Y0: -1624842821250481289
+Y1: 8715645437797
+c0: -18927483819872764249134
+c1: -1492253309677687233
+c2: 11170106424080
+c3: -362225174
+c4: 18480
+skew: 35448.476
+# side 1 lognorm 30.26, E 25.89, alpha -4.37 (proj -1.94), 2 real roots
+# side 1 MurphyE(Bf=2.097e+06,Bg=2.097e+06,area=1.007e+12)=1.271e-06
+### Best MurphyE so far is 1.271e-06, av. exp_E 23.19, av. E 26.45
+
+
+# Stat: total phase took 1.60s
+# Stat: rootsieve took 1.63s
+# Stat:  (stage 1 took 0.00s)
+# Stat:  (tuning took 0.69s)
+# Stat:  (stage 2 (sieving) took 0.89s)
+# 0-th best polynomial found (revision fcc8206fc):
+# n: 115792089237316195423570985008687907853269984665640564039457584007908834671663
+# Y0: -1624842821250481289
+# Y1: 8715645437797
+# c0: -18927483819872764249134
+# c1: -1492253309677687233
+# c2: 11170106424080
+# c3: -362225174
+# c4: 18480
+# skew: 35448.476
+# # side 1 lognorm 30.26, E 25.89, alpha -4.37 (proj -1.94), 2 real roots
+# # side 1 MurphyE(Bf=2.097e+06,Bg=2.097e+06,area=1.007e+12)=1.271e-06
+# Average exp_E: 23.19, average E: 26.45

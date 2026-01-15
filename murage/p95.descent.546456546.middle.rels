@@ -1,0 +1,569 @@
+# (fcc8206fc) /home/cado-nfs/build/c65b414053c9/sieve/las_descent --recursive-descent --allow-largesq --never-discard --adjust-strategy 2 --fb1 /home/murage/p95.roots1.gz --poly /home/murage/p95.poly --descent-max-increase-A 4 --descent-max-increase-lpb 0 --renumber /home/murage/p95.renumber.gz --log /home/murage/p95.dlog --descent-hint-table ./parameters/dlp/p80.hint --I 12 --lim0 300000 --lim1 300000 --lpb0 21 --mfb0 42 --lpb1 21 --mfb1 42 -t machine,1,pu --todo /home/murage/p95.descent.546456546.42.init.todo
+# Compiled with gcc 10.5.0
+# Compilation flags (C) -Werror=all -Werror=extra -std=c99 -Wall -Wextra -O2  -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2
+# Compilation flags (C++) -Werror=extra -Werror=all -export-dynamic -std=c++20 -Wno-c++11-compat -Wall -Wextra -O2  -Wno-literal-suffix -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2
+# las flags: BUCKET_SIEVE_POWERS SUPPORT_LARGE_Q LOGNORM_GUARD_BITS=1.00
+# Interpreting -I 12 as meaning -A 23
+# Descent: will get list of known logs from /home/murage/p95.dlog, using also /home/murage/p95.renumber.gz for mapping
+# Information on renumber table:
+# INFO: format = flat (20220411)
+# INFO: sizeof(p_r_values_t) = 4
+# INFO: nb_bits = 32
+# INFO: number of polynomials = 2
+# INFO: Polynomial on side 0 is rational
+# INFO: #additional columns = 1, on side(s) 0 1 (one column for both sides combined)
+# INFO: #badideals = 2, above 1 (p,r) pairs [max_p = 2]
+# INFO: pol0: not monic
+# INFO: pol1: not monic
+# INFO: lpb0 = 21
+# INFO: lpb1 = 21
+# Done: Read 310912 primes in 0.1s -- 4100468.5 p/s
+# Extra information on renumber table:
+# INFO: size = 310915
+# Got 298918 known logs from /home/murage/p95.dlog
+# Warning: sqside not given, assuming side 1 for backward compatibility.
+# Applying binding machine,1,pu on a machine with topology Package:1 [NUMANode] L3Cache:16 L2Cache:4 L1dCache:1 Core:1 PU:2 (512 GB RAM)
+# 1 memory binding zones
+# 1 cpu binding zones within each memory binding
+# 1 jobs within each binding context (hence 1 in total)
+# 128 threads per job
+# Expected memory usage per binding zone for the factor base: 0.85 MB
+# Expected memory use per subjob (max reached for logI=9): 55.86 MB
+# Expected memory use for 1 binding zone(s) and 1 128-threaded jobs per zone, counting 58 MB of base footprint: 115.35 MB
+# including primes up to 300000 and prime powers up to 18446744073709551615 using threadpool of 128 threads.
+# Creating side-0 rational factor base took 0.0 (0.0 real)
+# Reading side-1 factor base from /home/murage/p95.roots1.gz
+# Reading side-1 factor base took 0.0 (0.0 real)
+# Now sieving side-0 q=2962091003; rho=1160866331
+# Using parameters from hint list for q~2^32 on side 0 [32@0]
+# Building/reading strategies took 1.2s
+# Error: 1s buckets are full, worst is bucket 103 on side 0: 154 137 155 165 163 181 197 255* 159 159 154 167 145 135 199 161 158 171 183 160 160 168 174 161 165 173 173 173 178 190 143 167 135 152 151 174 153 158 147 169 161 159 152 189 153 152 156 159 170 175 151 160 171 113 186 164 166 167 166 152 169 165 173 170 175 161 145 163 190 156 161 185 180 134 196 166 161 199 135 160 174 170 166 161 195 160 185 153 160 172 182 154 185 182 180 200 160 189 180 152 220 163 176 186 165 193 177 168 164 170 159 174 160 161 158 164 161 164 161 159 163 152 147 170 148 156 160 160 211 192 /208
+# redoing side-0 q=2962091003; rho=1160866331 because 1s buckets are full
+# Fullest level-1s bucket #103, wrote 255/208
+# Updating 1s bucket multiplier to 1.000*255/208*1.05, =1.050
+# Expected memory usage per binding zone for the factor base: 0.85 MB
+# Expected memory use per subjob (max reached for logI=9): 57.84 MB
+# Expected memory use for 1 binding zone(s) and 1 128-threaded jobs per zone, counting 58 MB of base footprint: 117.33 MB
+# Now sieving side-0 q=2962091003; rho=1160866331
+# Using parameters from hint list for q~2^32 on side 0 [32@0]
+# Error: 1s buckets are full, worst is bucket 116 on side 0: 179 151 248* 174 158 164 183 161 164 189 162 160 148 159 166 138 171 181 163 189 98 160 210 149 162 122 167 149 125 158 167 182 172 161 155 151 168 150 160 178 173 180 188 163 159 182 180 159 163 166 157 166 163 154 210 160 163 158 158 178 158 138 164 162 185 163 177 141 166 169 171 170 163 170 167 192 173 158 166 178 167 160 157 183 198 168 123 156 179 166 166 185 140 153 180 175 162 157 149 172 157 160 162 151 159 155 155 158 165 162 199 136 170 144 173 154 169 167 171 162 167 166 162 167 168 188 171 163 159 164 /224
+# redoing side-0 q=2962091003; rho=1160866331 because 1s buckets are full
+# Fullest level-1s bucket #116, wrote 248/224
+# Updating 1s bucket multiplier to 1.050*248/224*1.05, =1.103
+# Expected memory usage per binding zone for the factor base: 0.85 MB
+# Expected memory use per subjob (max reached for logI=9): 59.92 MB
+# Expected memory use for 1 binding zone(s) and 1 128-threaded jobs per zone, counting 58 MB of base footprint: 119.41 MB
+# Now sieving side-0 q=2962091003; rho=1160866331
+# Using parameters from hint list for q~2^32 on side 0 [32@0]
+# Error: 1s buckets are full, worst is bucket 68 on side 1: 157 186 149 173 170 185 170 140 151 169 164 164 138 136 146 149 129 143 175 146 176 195 142 145 174 198 158 140 176 152 192 163 164 172 155 181 137 158 162 162 176 182 169 164 158 126 181 156 179 177 183 169 159 170 165 170 158 146 160 153 180 161 171 171 155 180 170 172 157 125 163 159 170 154 164 171 162 172 168 167 169 150 169 154 176 163 165 181 164 185 168 149 152 175 160 168 163 146 164 163 175 260* 193 149 150 162 179 172 188 176 171 191 169 164 163 150 169 178 175 184 175 186 190 156 170 145 158 165 166 164 /240
+# redoing side-0 q=2962091003; rho=1160866331 because 1s buckets are full
+# Fullest level-1s bucket #68, wrote 260/240
+# Updating 1s bucket multiplier to 1.103*260/240*1.05, =1.158
+# Expected memory usage per binding zone for the factor base: 0.85 MB
+# Expected memory use per subjob (max reached for logI=9): 62.10 MB
+# Expected memory use for 1 binding zone(s) and 1 128-threaded jobs per zone, counting 58 MB of base footprint: 121.59 MB
+# Now sieving side-0 q=2962091003; rho=1160866331
+# Using parameters from hint list for q~2^32 on side 0 [32@0]
+# Error: 1s buckets are full, worst is bucket 66 on side 0: 158 168 164 150 185 198 169 195 184 162 164 185 182 171 148 159 168 158 171 163 181 195 165 146 167 161 174 190 165 155 147 146 161 179 161 157 213 167 168 164 159 148 155 162 152 158 167 166 165 152 154 161 159 169 169 169 156 161 147 152 153 163 160 166 156 157 186 170 178 169 163 148 172 146 140 156 148 148 176 151 170 159 159 175 163 186 161 169 173 151 159 173 175 161 174 141 175 154 164 245* 173 192 177 177 142 160 179 169 157 161 172 164 178 155 168 172 182 170 188 135 165 180 186 147 168 154 178 182 152 171 /240
+# redoing side-0 q=2962091003; rho=1160866331 because 1s buckets are full
+# Fullest level-1s bucket #66, wrote 245/240
+# Updating 1s bucket multiplier to 1.158*245/240*1.05, =1.216
+# Expected memory usage per binding zone for the factor base: 0.85 MB
+# Expected memory use per subjob (max reached for logI=9): 64.40 MB
+# Expected memory use for 1 binding zone(s) and 1 128-threaded jobs per zone, counting 58 MB of base footprint: 123.89 MB
+# Now sieving side-0 q=2962091003; rho=1160866331
+# Using parameters from hint list for q~2^32 on side 0 [32@0]
+# Error: 1s buckets are full, worst is bucket 18 on side 0: 153 182 129 220 176 218 171 164 104 166 208 152 122 213 185 126 196 158 122 150 112 186 115 183 157 170 161 180 190 165 148 238 191 178 152 114 156 207 125 134 206 74 155 172 183 165 180 187 134 166 176 162 119 173 122 42 198 167 165 184 156 178 127 45 153 82 181 179 151 194 173 154 171 174 195 224 131 34 171 204 158 155 174 213 130 67 188 175 199 167 199 170 154 169 130 190 184 204 188 267* 205 196 126 197 136 169 201 174 164 168 177 190 192 144 151 161 203 157 214 172 207 188 155 189 161 62 186 123 195 159 /240
+# redoing side-0 q=2962091003; rho=1160866331 because 1s buckets are full
+# Fullest level-1s bucket #18, wrote 267/240
+# Updating 1s bucket multiplier to 1.216*267/240*1.05, =1.276
+# Expected memory usage per binding zone for the factor base: 0.85 MB
+# Expected memory use per subjob (max reached for logI=9): 66.80 MB
+# Expected memory use for 1 binding zone(s) and 1 128-threaded jobs per zone, counting 58 MB of base footprint: 126.29 MB
+# Now sieving side-0 q=2962091003; rho=1160866331
+# Using parameters from hint list for q~2^32 on side 0 [32@0]
+22240193633,234457:2,17,8560d,886e73,b08debfb:3,5,5,5,43,8bf,af1,55b1,f6df,1b389,520e5,a37db,32f39ff
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+# [descent] still searching for 0.40
+-16049656186,411555:83,97,161,c89,637d,b08debfb:2,2,2,2,2,3,3,3,5,b,11,11,1d,7f,2e7,12bf,90c5,b609,3d702e7f,c7a70c6d
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+39335561249,202084:5,1f,31d,3e4f9743,b08debfb:2,2,2,2,2,2,2,3,3,3,3,7,b,b,49,6b,a3,257,2a5,b8d,1073,2851,8f879,e58dce2f
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+11492081797,298052:5,e3,abd,1d7d,3847,b08debfb:2,2,2,2,2,2,3,d,13,2b,2b,43,47,e9,71f,2ccb,900d,3296622d,fe86e281
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+841404177,330428:97,df,c3b5,3bf39,b08debfb:2,2,2,2,2,3,5,b,11,13,25,2b,43,2e7,50b,9f5,189b,555b,116b3,c33e15dd
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+# [descent] Improved ETA by 1.00
+# [descent] still searching for 0.20
+-9127185278,352593:7,577,2e783,3e1a1,b08debfb:2,2,2,2,2,2,3,3,5,b,b,125,3d7,85d,eed,27ef,12e1b,276b11cd,39cbfcef
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+26785968464,203349:5,17,e9,568d,4646b,b08debfb:2,3,3,3,7,b,11,1f,26b,359,3d7,4eb,a8d7,cca7,7a37787,326c7df1
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+25558442423,195096:a3,2d7,52b2369b,b08debfb:2,2,2,2,3,3,3,7,11,59,97,641,3127,468d,15163,11c327,19452b,6b64e5
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+17322430477,222626:25,66ba1,dd048b,b08debfb:2,2,2,2,2,2,3,3,3,5,d,199,1cf,e6b,3509,9bdd,1b9fb,be13cf,aed8df27
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+23758194206,236099:3,1d,c5,14cf5,2515f,b08debfb:2,2,2,5,5,7,d,11,1f,43,2a5,dcd,142f,1db3,2ba5,22f74b33,329db9ff
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+34866902636,22247:3,b,17,b3,24a14439,b08debfb:2,11,13,1d,43,43,a3,ad,e9,5e7,1633,44f9,117df,426851,24fd135
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+5517513721,260265:2,b,1b6a3,77f8865,b08debfb:3,3,5,7,d,2f,43,c1,2e97,45d9,8945,aee9,267e6cb,9b6e8a9f
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-240836128,313321:3d,5615,1190bb49,b08debfb:2,3,5,5,1f,53,723b,8335,8687,1c94f,d296a56d,e32f0ea3
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+17644011933,199603:2,2,2,5,1f,347,b3236df,b08debfb:3,3,b,11,25,1cf,257,4a9,1b9d,1f75,23e3,1230b,62c945,1914b65
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+17052536909,195525:2,7,49,59,2af1,2eebb,b08debfb:3,3,5,d,29,115,2bd,35f,5fb,1591,1e25,2e85,a8fd,cd93,108841f
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+4391846959,233694:5,95,3259,1be48a5,b08debfb:2,2,2,2,2,2,3,3,7,d,11,17,43,43,2eb7,52c7,6449,1afe7,97a12f,4940735
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+3738137288,234265:3bfa7,44d22277,b08debfb:2,3,5,5,b,67f,103d,1c8d,1fe7,25f9,78dd,193a7c2f,1d92a527
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+6317014627,223530:1d,3a69f,23fdb17,b08debfb:2,2,2,2,2,3,3,3,5,47,6b,e9,21d,4a9,925,1e13,dea1,22e11bf,14794201
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-9673932027,270068:5,1af,8c3,4958a01,b08debfb:2,2,2,2,2,2,2,3,3,11,97,58f,7eb,fa1,170f,47fb,1c71b,149837,1321a70d
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+7889452317,196451:2,2,2,859,27d1,137f21,b08debfb:3,5,7,6b,167,2bd,1cf3,1d09,21a1,8003,1bd51,7de0d,13abc63
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+5786506975,207092:5e5a19,2572fa3,b08debfb:2,2,2,2,2,3,3,5,7,d,d,11,25,e5,2dd,8bf,3497,aba7,18049345,1ccf8c2f
+# [descent] This relation entails an additional time of 4.00 for the smoothing process (4 children)
+-9095614453,252521:2,2,3,c5b,2333,f83c9,b08debfb:5,5,5,7,1f,59,2bd,409,45d9,bce1,1908b,3252d4b3,4182c9b5
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-17610328495,283498:7,14ec7,29245bd3,b08debfb:2,2,2,2,2,2,3,5,d,29,47,b5,ce5,715d,b5a3,12d51,9c4b6dd,2e5ffa01
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+41095360661,55204:17,89,3599,15d2b9,b08debfb:2,2,2,2,2,2,3,3,3,5,49,a3,f53,102b,1ef7,d2e9,e705,33b683f,301a5523
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-1226210113,207780:7,17,249e9,a826e3,b08debfb:2,2,2,2,2,3,3,5,1f,1f,43,53,a7,b7b,2f29,1ba15,29e8f6bb,e09b8a79
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+7901730252,165977:5,b,14b,44f,8bf1a7,b08debfb:2,3,11,13,17,2b,199,183b,be07,11e99,14065,191332f,32d933e9
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+27229851625,83043:2,2,7,107,a8fd,d891,b08debfb:3,3,5,7f,529,92f,2273,254f,15161,1c883,59a14ad,d4677b5
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+16517250977,114952:5,7,17,c7,1183,1f589,b08debfb:2,2,2,2,3,d,1f,d3,115,175,1f3,869,3103,f421,5c8e0eb,51130beb
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+28028106055,66772:3,7,d,35,16589c69,b08debfb:2,2,2,2,2,5,5,b,17,29,125,2b3,8f9,f65b,15a51,21d5b,160ba9,51a7ef1
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+17636055066,102103:29,46345,5db7c5,b08debfb:2,2,3,5,11,3b,3b,8bf,3b11,6b11,e95f,1c001,29d2f8f,34cd6ab
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-13735007931,214184:5,13,305b,fed21f1,b08debfb:2,2,2,2,3,3,3,7,7,49,83,402b,4ad5,d825,1500b,c128191,5a2ff26d
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+10658676085,121474:3,3,3,55493,c0cf7f,b08debfb:2,2,2,2,2,2,5,5,5,7,b,b,2f,10d,4cf,45d9,1984f,1d55d,39821,c601b781
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+25009237265,57877:2,a80b,4d78f0b,b08debfb:3,3,3,5,7,b,b,11,53,a7,125,50b,623,876b,96ef,1456d9b,1eb464e7
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-25097440284,230525:107,27347,861d91,b08debfb:2,3,5,b,29,3b,49,6b,b5,2a5,3b03,4459,872b,5165e3,d19665c9
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+25511657243,50664:11,58f,2b9be9fb,b08debfb:2,2,2,2,3,3,3,5,b,1f,1f,59,138b,5281,8bf7,8e79,130f7bff,ad917fa9
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+20514741763,55074:17,99b,4100cb1,b08debfb:2,2,2,2,2,3,3,5,7,3d,199,2363,7a1b,fabd,1a2c1,753579b,66f6bbdf
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-14281089844,177777:43a5,c72d,4aa9d,b08debfb:2,3,3,b,b,3d,1eb,183b,4d83,1282d,15aed,aead473,bdbb5ee9
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-25387194638,215807:5,2302b1,1d6419d,b08debfb:2,2,3,7,13,1f,1f,a7,469,7c9,a13,4087,4289,c7a4fa9,85505f81
+# [descent] This relation entails an additional time of 4.00 for the smoothing process (4 children)
+-7187232979,147230:3,17,b9a1,3cb9a17,b08debfb:2,2,2,2,2,5,5,11,11,2b,b29,756b,1aa55,1ba7f,30bcde9b,8b023139
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-14031313339,154930:5da567,255b5a9,b08debfb:2,2,2,2,2,2,3,5,5,7,7,b,d,1f,617,a8b,6dcf,d591,14a210f5,c350a4db
+# [descent] This relation entails an additional time of 4.00 for the smoothing process (4 children)
+12748228499,55052:3,3,3,3,2b,223,3d7,3bd1,b08debfb:2,2,2,2,2,2,2,2,5,7,13,b8d,8803,ba61,f791,19c25,345c49,2cfe7d19
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-16920546795,156484:d,1f,a7,10f,1fd,69df,b08debfb:2,2,2,2,2,2,3,5,7,3b,43,b11,1609,18d7,103c3,18c5b,3469ff,18ae6521
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+23594439387,6356:b546b,56aaacb,b08debfb:2,2,2,2,2,3,5,d,11,13,1f,3d,1df,2ba9,142bb,1b3a1,36ae7931,4b8e04c3
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+8339103957,57485:2,7,89,283,4c1,7759,b08debfb:3,5,5,49,a3,17ff,9e2d,1451b,14687,34b94391,83e94afb
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+2225586520,67107:7,29,1a5,2642db41,b08debfb:2,3,3,5,b,d,d,d,43,557,31a9,6557,1b685,23cc509,82127bc1
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+2862787073,61915:2,2,5e49,2a944689,b08debfb:3,5,5,b,b,6b,24b,71f,18eb,cb59,cfa9,945f41,c8e82465
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-1080599014,70013:3,6d,fc43,42564b,b08debfb:2,2,2,2,2,2,2,2,2,5,7,1d,565,1e2f,2a6b,32b3,95bd,d2e221,3a9a5ac9
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+1455066547,55795:2,3,1f,25,9ba1,3a8bf,b08debfb:5,7,d,d,511,b8d,24a1,6779,6e33,1d24082d,af36ec4d
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+8128501927,26526:73687,f0ebbb,b08debfb:2,2,2,2,2,2,3,3,5,b,1d,1f,1f,53,d3,4459,cc43,11ddd,17d8a31,5b5a399
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+7739090426,22489:47,97,1419a243,b08debfb:2,2,2,3,5,7,17,1f,3b,59,6d,a3,199,2987,e417,1cbcd,330a7,5ad715
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-13332231356,93855:1d,157d99,3c2ef7,b08debfb:2,3,3,5,11,11,11,13,13,2b,49,e5,151,fef,448f,ce8a5,153941,65f94d
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-11323334019,1807:2,2,b,65,637f,5310d,b08debfb:3,1f,59,409,be9,5071,93c7,1d521,39aff,7a01b,27a897d
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+-17854267435,96441:2,c1ff,6b5038f5,b08debfb:3,3,5,5,7,17,101,d21,13eb,1549,3835,b25b,df93d51,2503311d
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+20310943,27754:3,3,3,3,d,a4c3,c0287,b08debfb:2,2,2,2,2,5,7,1d,1f,d8b,201d,ae6b,13cdf,28f83f1,4eec333
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-13231327733,62710:3,199,329,397,20825,b08debfb:2,2,2,2,2,2,5,5,7,b,10d,21e5,48f7,d5b9,1b5e1,14a633b9,86c8ec83
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-6454668859,11737:2,1f,61,151,42d,3ff1,b08debfb:3,3,7,d,11,2f,47,a3,35f,4021,50d5,5b97,965e1e3,a2f31e7
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-4379146355,23563:2,2,2,2,2,3,3,49,7c064147,b08debfb:5,5,5,7,13,2f,43,a7,137,31d,2597,9715,fe03,56cbd,f68ccb
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+25536614983,249272:d,25,49,949,2a9187,b08debfb:2,2,2,2,3,3,3,5,3d,43,3a1,443,1807,5fe3,fae7,27883,794ed,3b19025
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+41106586,23:59,44a6cd57,b08debfb:2,2,3,5,5,7,13,47,12af,422f,2bec5,cd74d,3609e23
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-1300148110,24349:17,2b,58f,8ad,2b99,b08debfb:2,2,2,3,3,3,3,3,5,7,11,11,1f,18df,79f3,7ced,29477,43590b,521dcd
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+1322508903,74312:d,4f,67,125f,2bf15,b08debfb:2,2,2,2,3,3,3,3,5,5,b,17,2b,1cd,a63,5b25,dd15,16cf20bf,85432609
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+7456939722,54037:5,5,7,83,b89,9fdd3,b08debfb:2,2,2,2,2,2,2,3,1f,43,24b,283,4ff,c61,13c43,180bb,2382b,551ae629
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+26780587745,177621:2,67,3b3,1813,1c1d1,b08debfb:3,3,5,b,b,d,6b,58f,2b7b,3341,3f5f,18d45,635b10f,44d2d38b
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+14844996803,79284:71,1ee3,3816415,b08debfb:2,2,2,2,2,3,3,3,5,1f,43,a7,577,51a7,aca9,18f25,26867,29b81,4d0183
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+7792987501,116700:2b,4445,9b3c197,b08debfb:2,2,2,2,2,3,3,3,5,7,b,1f,1f,43,378d,11aef,15175,7d16c239,a446b845
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-7730080963,76741:2,89,22d,5149,9589,b08debfb:3,5,5,1d,1f,1f,43,43,95,2c5,35b,99b,b4bf,1ad3d1,b68f8b4d
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+1696207605,13127:2,2,b,143cb,2e9879,b08debfb:3,3,3,3,5,5,7,11,2f,2f,53,167,c9d,1ebb,8365,926281,2a9840b
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+28587227679,107726:9d,d3,427,134495,b08debfb:2,2,2,2,2,2,3,5,7,13,2f,139,191,295,4a3,115f,bcff,148ff,a543f,30d56bf
+-18361694116,157335:8b,10f,593,49096d,b08debfb:2,3,3,5,b,2b,a3,371,2141,2ac5,62fb,163f1,8a97b29,104026c7
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-9304755328,207079:b29,b377,21d6a9,b08debfb:2,3,7,d,d,11,29,47,239,5e2b,8131,16ab1,1cc1b,18b083,198880f
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+1089677929,265714:3,3,5,25,62eff,780fd,b08debfb:2,2,2,2,2,2,7,13,1f,1f,43,53,b5,13d,85d,29ab,2b33,5ff6e03,c54b96b
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+7568819462,80329:7,ad,1387f,c26b3,b08debfb:2,2,3,6b,5ab,871,9eb,348b,39b3,10ab7,b1077f,93c2240b
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-18215334985,178386:b,b,bf,933b,4f6d5,b08debfb:2,2,2,2,2,3,3,5,5,7,409,4c7,51b,1a7b,3b81,574d,3e85d,57659,115d47
+-4509127851,113852:d,3b,33d,74f,2071d,b08debfb:2,2,2,2,2,3,5,13,2b,53,53,101,137,1cf,239,198f5,2186cfa5,7148db93
+662227379,2172:199,1b37,35479,b08debfb:2,2,2,2,2,2,3,3,3,5,5,5,7,ef,3d7,51b,469d,8447,3bc89,5d7b73eb
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+-5278948445,53036:1f3,79f,a7b,7d59,b08debfb:2,2,2,2,2,2,2,3,3,3,5,7,b,d,1df,3d7,2e97,143d7,14ccf,1a96e3,463378f
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+-24025850733,61282:5,5,1c6495,329521,b08debfb:2,2,2,2,2,3,7,13,17f,529,98f,c83,2bf9,58c7,a6d5,edd85,1eb3656d
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+142460366,9015:182f89,69204d,b08debfb:2,2,2,2,2,2,2,2,2,2,3,3,5,7,b,b,97,14d5,45af,86a5,7bd1b3,237b1175
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+157148423,252654:d,13,4f,3a9,109a82d,b08debfb:2,2,2,2,2,2,3,3,5,7,1f,1f,47,3f5,935,af1,10e47,7437d04b,8f867ca7
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-6602115129,84578:8b,146f,a7b170d,b08debfb:2,2,2,2,2,3,5,5,5,7,2f,1cf,281,13c3,2e33,81df,1998a955,68e5f96b
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-5527180599,174100:527,a715,4033e7,b08debfb:2,2,2,2,2,2,3,3,5,1f,b5,35b,855d,9931,e7f1,f1fd,102363d,183fd03
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+196121963,69070:7,53,2d7,3b3,34d09,b08debfb:2,2,2,2,2,2,3,5,1f,47,52f,1d09,3901,1a1d1,20294647,735fab07
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+20233795937,9808:15b,239,fcf090d,b08debfb:2,2,2,2,3,3,5,7,b,b,17,1f3,409,15d7,3079,16147,344e084f,ae1ee5a9
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+7325497071,158809:2,2,2,2,2,b,b,b,35,4ac2b7d,b08debfb:3,5,5,13,13,1f,2b,989,eef,18d7,a187,1b7cd,595b6b,1a809e59
+# [descent] This relation entails an additional time of 0.00 for the smoothing process (0 children)
+# [descent] Yiippee, splitting done
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+# Taking decision on 32@0 side-0 q=2962091003; rho=1160866331
+Taken: -18215334985,178386:b,b,bf,933b,4f6d5,b08debfb:2,2,2,2,2,3,3,5,5,7,409,4c7,51b,1a7b,3b81,574d,3e85d,57659,115d47
+# taking path: 32@0 -> done	side-0 q=2962091003; rho=1160866331
+# BEGIN TREE
+# . 32@0 2.2262	side-0 q=2962091003; rho=1160866331
+# END TREE
+# 84 relation(s)
+# Time for side-0 q=2962091003; rho=1160866331: (0.2 elapsed) 0.39s
+# Now sieving side-0 q=380238767611; rho=129512166772
+# Using parameters from hint list for q~2^39 on side 0 [39@0]
+# Building/reading strategies took 1.2s
+-254556872679,1139882:103b65,fbbe8f,5887ff25fb:2,2,2,2,2,2,3,3,7,b,49,107,167,35b,102b,4087,6863,51a9fee59,4ec92bfa4d
+-360900096894,3739921:5,7,1f,59,1c3ee0b7,5887ff25fb:2,2,2,2,2,2,3,2f,b5,565,1949,5713,19bb5,1e559,2634bf,2e23e9,af8fa9
+-290817949629,4238516:5,5,e37d,200a6d3,5887ff25fb:2,2,2,2,2,3,3,3,3,3,3,7,13,1f,25,2f,43,97,50b,7eb,bfe1,11eff,5da82b9,2073f00a9
+91546836605,450258:293,c1f01a6d,5887ff25fb:2,2,2,2,2,2,3,3,5,b,b,d,d,5c9,8f9,1391,1bc5,368b,3bf5071f7,598a6ca61
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+# [descent] still searching for 0.60
+-3663171283,332409:2,511,85f,93859,5887ff25fb:3,3,3,d3,26b,925,b22d,bd61,14ffb,efd2585,5a247613f3
+-169160816611,5216728:11,83,cf1,72c73f,5887ff25fb:2,2,2,2,3,3,3,3,17,1d,49,8f9,4bd9,a70f,d2bf,dea7,450c6173,d1960405f
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-15438247649,133206:5,29,1ec9e37c1,5887ff25fb:2,2,2,2,2,2,3,3,3,7,1c33,2e97,3c17,19bb5,2ca37,4f348db,3b0a48a7
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+41321902756,528233:b,c1,74dea067,5887ff25fb:2,3,5,5,d,d,e5,125,f47,103d,1e71,32cb,117ad,1bedaf,38f1de35f
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+# [descent] Improved ETA by 1.00
+# [descent] still searching for 0.40
+-34476225095,6650027:2,2,425,13735,2fd2b,5887ff25fb:3,3,5,5,7,7,1d,2f,6d,11b,52f,157f,1fe7,12713,603b4d565,37c81a7301
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+16793989931,223950:7,11,65,6b,152761,5887ff25fb:2,2,2,2,2,2,3,3,3,5,49,c1,4f25,8eb1,1ae31,ed6c28775,3f33d6c9c7
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-154498959345,5301371:2,35,47,1bb3bf56b,5887ff25fb:3,3,3,5,7,b,d,d,11,1f,49,4f,53,10d,6fd,a8b,6221,2ac35e61b,210a5e58df
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-451056879055,2304576:d,47,f43,8f6ec9,5887ff25fb:2,2,2,2,3,3,5,7,b,b,3b,2e7,de5,1945,1ba7,3d2d,6485,574fed03,31d2156f7
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-249854452527,3893198:5,d,74f,15cf3b89,5887ff25fb:2,2,2,2,2,3,3,3,b,11,1f,43,b5,199,a9f,1583,1ce8b,fe61d,f4d4a7,334de5c6d
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-434216219851,2221090:1fc27,ef69e09,5887ff25fb:2,2,2,2,2,2,3,5,7,13,2dd,ef9,1093,2429,771d,18413,5ee28805,65254a0723
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-49527105518,6235723:3,3,3,e9,9f7,3b74f9,5887ff25fb:2,2,5,2a5,21b3,2737,2bf9,474b,7ead,89b9,3adb34a7,c2cd6d0c9
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-260308735340,3678461:b,1f,101,3f5,75499,5887ff25fb:2,3,5,2f,43,a7,3d7,5fb,26c9,66e3,19939,74261507b,565677e8c9
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-159416338585,4640352:b,1cf,dcd,2a0d7f,5887ff25fb:2,2,2,2,3,3,5,17,1d,989,3bad,e84b,15163,183b3,28835,bc70d,3260782db
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-170621914762,4160383:5,a49,78bf,1b167,5887ff25fb:2,2,2,3,43,1367,79ff,7ce5,ac09,1e305,293b21,48f529d,4d2c7869
+-443044809357,2076190:2f,20b,6d3,b2d17,5887ff25fb:2,2,2,2,2,2,3,3,5,5,5,7,b,11,29,3d7,6607,66b9,1267d,19f5c1,a37bc3,21c35af37
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-312084411227,2516610:13,e983,1b4dca7,5887ff25fb:2,2,2,2,2,2,3,3,5,7,b,11,17,1d,641,1fb5,32b3,b93b,578641,f6ca69,a6042333
+# [descent] This relation entails an additional time of 4.00 for the smoothing process (4 children)
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-344072134589,2900882:61,2eb7,1e7eabb,5887ff25fb:2,2,2,2,2,3,3,7,b,17,aa9,f95,102b,353b,3ed7,4a45,6cfd,7a6ec3,12dd8d1d
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-105580083422,4318959:329,1e21b,6e3fb,5887ff25fb:2,2,3,3,5,7,11,11,17,1d,b5,bf,3f5,f95,5dc1,15409,2a8137,4a07e3,8df731
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+9026178539,5613861:2,2,2,db7,74a17377,5887ff25fb:3,3,3,5,11,13,17,43,3d7,eb1,74b9,1c8fd,a4491,24433c21,2af570e5
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-14311963,5047972:5,647,841,2c993b,5887ff25fb:2,2,2,2,2,2,3,7,11,e5,b29,17e9,2195,24df,1b7c7,4595f,7ccaed,1b1262d7
+-198155001043,2795172:5,5,b5,301,8e261d,5887ff25fb:2,2,2,2,2,2,3,3,7,b,13,1f,35f,4b43,6d27,876b,13381,8ceb7b9b,770891f65
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-159491926421,4095408:52b1,7c8cac03,5887ff25fb:2,2,2,2,3,3,2b3,91d,6d61,7735,bf0b,e77f,10d5bd,1321b35,31588121
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-11360405641,5909192:3,11,1d,67,2e3,7e96d,5887ff25fb:2,2,2,2,5,7,1f,1f,43,53,97,d3,387d,5ca7,9a13,f377,15aab,52177,199b35
+# [descent] This relation entails an additional time of 0.00 for the smoothing process (0 children)
+# [descent] Yiippee, splitting done
+# [descent] This relation entails an additional time of 4.00 for the smoothing process (4 children)
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+# Taking decision on 39@0 side-0 q=380238767611; rho=129512166772
+Taken: -11360405641,5909192:3,11,1d,67,2e3,7e96d,5887ff25fb:2,2,2,2,5,7,1f,1f,43,53,97,d3,387d,5ca7,9a13,f377,15aab,52177,199b35
+# taking path: 39@0 -> done	side-0 q=380238767611; rho=129512166772
+# BEGIN TREE
+# . 39@0 1.5049	side-0 q=380238767611; rho=129512166772
+# END TREE
+# 27 relation(s)
+# Time for side-0 q=380238767611; rho=129512166772: (1.4 elapsed) 1.55s
+# Now sieving side-0 q=831653; rho=477964
+# Using parameters from hint list for q~2^20 on side 0 [20@0]
+# Building/reading strategies took 1.2s
+-158739579,4211:2,2,2,2,2,2,2,2,2,2,5,17,65269,67c25,cb0a5:3,7,191,12cd,263b,7295,87b3,110bd,68f57,e77b7
+# [descent] This relation entails an additional time of 0.00 for the smoothing process (0 children)
+# [descent] Yiippee, splitting done
+# Taking decision on 20@0 side-0 q=831653; rho=477964
+Taken: -158739579,4211:2,2,2,2,2,2,2,2,2,2,5,17,65269,67c25,cb0a5:3,7,191,12cd,263b,7295,87b3,110bd,68f57,e77b7
+# taking path: 20@0 -> done	side-0 q=831653; rho=477964
+# BEGIN TREE
+# . 20@0 1.3875	side-0 q=831653; rho=477964
+# END TREE
+# 1 relation(s)
+# Time for side-0 q=831653; rho=477964: (1.4 elapsed) 1.41s
+# Now sieving side-0 q=45065021; rho=15882844
+# Using parameters from hint list for q~2^26 on side 0 [26@0]
+# Building/reading strategies took 1.2s
+-34067177,1635:2,4f,877f,18d849f,2afa33d:3,3,3,5,3d,49,a7,191,1cf,1eb,9d2d,6b7125,3a66ba7
+-62785066,6573:1f,1f,43,5455,6212b,2afa33d:2,2,3,3,3,6b,28d,a13,349d,1460f,1809b,29d0fd,354019
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+# [descent] still searching for 0.40
+-156782597,17959:2,3,7,7,7,7,b,25,1eb,811ed,2afa33d:5,17,26b,a99,fa7,2969,501b,161a5,127751,36ed61f
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+# [descent] Improved ETA by 1.00
+# [descent] still searching for 0.20
+149429397,4796:5a4d,18b53,263b9,2afa33d:2,2,2,2,2,3,5,5,7,49,d3,2bd,35b,6ffd,1b0a1,7ae37,38d5069
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+-971883361,29938:1915,31f7,1f35025,2afa33d:2,2,2,2,2,3,3,7,7,17,2f,3d,43,49,6b,1c9,6e93,e339,4b91f9,dc3177
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-2480360942,28291:3,305,581,2fb3,118cf,2afa33d:2,2,7,17,29,43,43,4f,1d39,254f,2dd3,7b2b,4e80a7,94ea7f
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-2368031642,11013:5,b,a3,2c873,d2c13,2afa33d:2,2,3,3,3,7,11,83f,ad9,2c87,12ed7,17e8b,1ee23,2a113,2d995
+# [descent] This relation entails an additional time of 0.00 for the smoothing process (0 children)
+# [descent] Yiippee, splitting done
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+# Taking decision on 26@0 side-0 q=45065021; rho=15882844
+Taken: -2368031642,11013:5,b,a3,2c873,d2c13,2afa33d:2,2,3,3,3,7,11,83f,ad9,2c87,12ed7,17e8b,1ee23,2a113,2d995
+# taking path: 26@0 -> done	side-0 q=45065021; rho=15882844
+# BEGIN TREE
+# . 26@0 1.3833	side-0 q=45065021; rho=15882844
+# END TREE
+# 7 relation(s)
+# Time for side-0 q=45065021; rho=15882844: (1.4 elapsed) 1.42s
+# Now sieving side-0 q=1192958861; rho=816505495
+# Using parameters from hint list for q~2^31 on side 0 [31@0]
+# Building/reading strategies took 1.2s
+-1108096712,132395:4f,3fb,97f7,21067,471b1b8d:2,3,3,5,b,25,1ddb,2363,54f7,576d,7bb3,4e211a5,3842cefd
+-18263139637,2815:2,d79,1a23,32e2f5,471b1b8d:3,3,5,5,151,167,199,24b,985,c11,1a2f,18c35,916861,f267a43
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+# [descent] still searching for 0.40
+-18608737218,145225:7,d,5b043,10f2911,471b1b8d:2,2,3,3,5,b,6d,a7,bf,13d,1a11,21b3,a577,16619,3a73f,2403c341
+15219058072,220613:ec3,15cd7,19c96f,471b1b8d:2,3,5,5,5,7,b,53,1f3,2c5,3841,7525,c757,1c837,126c37,1a70f71
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+# [descent] Improved ETA by 1.00
+# [descent] still searching for 0.20
+15668454839,140333:2,2,3,89,e5,823,62225,471b1b8d:7,b,d,d,2f,139,1ca5,6109,afbb,e4c7,11c0ac83,71d7a233
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-17844947197,153852:13,49,b2d,95ed0cf,471b1b8d:2,2,2,2,2,2,3,3,5,17,17,1f,1f,25,e5,1807,183b,a3e5,228b9,65ec7,24f729d
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-146633920,37527:47,599,17b3,2ef75,471b1b8d:2,3,3,5,5,5,d,13,53,11b,257,1525,5117,819d,334fd,667fa1f1
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+2232638849,235044:5,10e095,7bf0343,471b1b8d:2,2,2,2,2,2,2,3,3,b,13,29,2b,3d,139,21d,50b,f4f,1df9,23ef,d1287,1187975
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+3613308581,59088:17,107,5a77,1109ed,471b1b8d:2,2,2,2,3,3,3,5,7,b,1f,265,1085,14e3,5b3d,bc45,72f2a5,40be95d3
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-4686778511,87827:2,2,b,b,13,209,11c3,3805,471b1b8d:3,3,5,5,7,11,11,11,25,281,2a9d,ca7f,16f69,1385cfc3,3119cb97
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-3409461139,41481:2,5,5,6f1,4c07,162c7,471b1b8d:3,3,3b,3d,43,49,139,10f1,2513,53f5,3fe3a2a7,6c7d0003
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+3046777415,41673:2,2,2,d8e9,e458753,471b1b8d:3,3,3,5,7,11,17,b5,3c7,52f,a81,20a1,b39b,21721c7,3d2d4f9
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+2426958374,16865:3,11,468b,22c0271,471b1b8d:2,2,5,7,b,1d,43,295,64d,1b25,2f11,5a5b,923dbf,15f9dc79
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-3290897878,106219:11,2b0ad5,723827,471b1b8d:2,2,3,3,7,17,1f,29,49,b5,c1,89f,2665,746b,a655249,706901f5
+# [descent] This relation entails an additional time of 4.00 for the smoothing process (4 children)
+-5318706803,40922:5,d,31d,61b5,201e9,471b1b8d:2,2,2,2,2,2,3,11,11,a3,17f,de7,f0b,1df5,264b,7ced,799f7,81dc0f
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+266857572,88267:5,b,35,dd5,195b417,471b1b8d:2,3,3,7,7,1d,11b,f29,6caf,d259,113ad,1530b7b,5beae695
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+6432994418,27033:5,6b,3677f,44b55,471b1b8d:2,2,2,2,2,3,3,b,d,1d,1f,43,337,79f,1280b,1aa29,5d33c41,116d295f
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+6601439777,143488:407,8e44b,a161b,471b1b8d:2,2,2,2,3,5,7,1f,25,1cf,166f,24f7,3497,ad65,dcc7,12ac7,8367433
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+7041260377,49477:2,3,3,5,13,1c19,7aea6b,471b1b8d:7,24b,8e1,ed1,2e85,2f7d,4969,8153,b9713,2666c79d
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+5923015097,152122:5,d,11,3d1,17b7a87d,471b1b8d:2,2,2,2,2,2,3,7,1f,2f,43,49,95,15b,241,5323,abfb,111fb,c9bfb,1249b1
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+-1623459171,19300:7,29,47f,d3d17ff,471b1b8d:2,2,2,2,2,2,3,5,13,25,2159,37d5,62a5,16b7d,125ed81,39639a5b
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+6022470439,32247:2,1c9d3,d866c2f,471b1b8d:3,3,5,7,2f,101,10d,371,4ff,fd3,1a7d,a943,d0529,25240dbf
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+4719018743,178776:29,439d5,2be5a65,471b1b8d:2,2,2,2,3,3,7,b,1d,47,7f,1567,ea4d,14e09,1a66b,22420d9,496cbd3
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+5259817104,57515:6d,184d,c2ad315,471b1b8d:2,3,3,3,3,3,5,7,b,2b,1cf,313,4cf,83f,a39,28bb,1dc1e75,926c76b
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-6266266262,41365:3,fb,dc6f,406b37,471b1b8d:2,2,2,2,2,5,5,7,1f,2f,6b,3a1,d2b,1741,2e97,3925,11f629,143113e7
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+7364571956,8657:3,1d,20b,291d9921,471b1b8d:2,1f,53,529,a85,4453,6ae7,15f9b,5a11badb,60a5a073
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+7926800304,128657:2a6049,74cd92f,471b1b8d:2,3,5,2b,43,47,d3,e5,2513,df3d,18b27,25cd0da9,5629fe2f
+# [descent] This relation entails an additional time of 4.00 for the smoothing process (4 children)
+4686823372,48897:5,11,c7,209,c8cc11,471b1b8d:2,3,3,13,1d,16d3,21e5,346d,13c21,14c75,4bd7b87,91a1145
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-6276512222,33899:287,50c0f,b20f3,471b1b8d:2,2,3,3,3,5,7,b,17,d3,d0f,325d,add5,17281,1412dd9,61f5e7c7
+10315092625,26297:2,d,11,3b9c819b,471b1b8d:3,3,5,7,2b,4f,28d,10e7,1645,18d7,3d75,1fe61,586a3,4e6aa5d
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+9938606795,33726:20315,c12e04b,471b1b8d:2,2,2,2,2,2,3,3,3,5,1d,3b,3d,43,4f85,9539,e593,116c3,54d61,4cb1b67
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+8207898246,192371:5,2b,279b,eb2a95b,471b1b8d:2,2,2,2,2,2,3,7,3d,257,7db,f53,7f61,91bb,ea35,11a167,5eb9a7b9
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+9290822603,87042:34e1,5597,a3b95,471b1b8d:2,2,2,2,2,3,3,3,5,7,1d,29,115,2dd,2dd,641,9fe5,c5a7,46dd01,5109745
+-13087181687,139408:3,3,5,1fa6b,5866be9,471b1b8d:2,2,2,2,7,17,1945,2d1f,b3e3,10d9b,16d2f,107f149,77a8e273
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+10684685741,126086:3,5,5,b,a3,64f9,15c8f,471b1b8d:2,2,2,2,2,7,13,29,6d,b5,7e1,e3b,183b,15eb3,3c0cb,b6345,78599f
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+10752266963,243793:2,2,5,2f,20f6b,5190e9,471b1b8d:3,3,7,13,13,43,101,1a3,a13,1795,17e9,1fd3,18293,20f947,4d5e05
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-13559059686,71971:2b,71,83,1a3,131099,471b1b8d:2,2,3,5,3d,97,63d,e6b,c457,cc91,edd7,1ff877f,5ead67d5
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+11380955633,150016:7,2678b,1483584b,471b1b8d:2,2,2,2,3,3,59,3a1,43f,7bb,2861,2a9d,11629,1307b71b,1fd7476f
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-15517712439,57998:1eb,afdad,d28d7,471b1b8d:2,2,2,2,2,3,5,5,5,d,29,6b,35b,178d,1a2f,5c0f,f50b,15ba34d,3aebd47
+15424938795,2941:2,2,2,2,2,2309,17898581,471b1b8d:3,3,3,3,3,5,2f,7f,83,e5,2c5,3121,77ef,a469,24066eb,19498baf
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+12017462687,31198:2f5,914f,13b49,471b1b8d:2,2,2,2,2,2,3,3,3,3,3,3,3,5,5,5,7,29,191,26b,359,21fb,2b31,7d2896b,3678addb
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+19831646707,57302:5,11b,8293,7173b,471b1b8d:2,2,2,2,2,2,3,3,47,7f,b5,63d,95f,676f,7d3f,c691,cf8d5,2876986f
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+-10800780400,126273:e4b,dea1,233a85,471b1b8d:2,3,3,3,5,b,2f,43,49,a75,6ae7,12289,13c75,180fc7f,2eace507
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-19451653427,14670:563f,dcd5,2737f,471b1b8d:2,2,2,2,2,3,3,5,7,b,2b,1eb,c659,16897,1863d,1ac5f,117581,2f1d533b
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+17361886063,132666:7,3cb3f,982ef1f,471b1b8d:2,2,2,2,2,3,3,3,1f,257,2bd,455,5da9,13627,17beb,2ae30ef,240b650f
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+10053959063,98220:d1f09,fcb76f5,471b1b8d:2,2,2,2,2,2,3,3,3,5,7,d,49,50b,157f,2351,4ab1,1d5a9,33d897,158cc6ff
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-20541620867,114634:3,1adbcb,5e577e9,471b1b8d:2,2,2,2,2,2,5,7,b,b,1d,a7,137,1bb,a1f,fc9b,10729,20b26d7,7ab55413
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-3656443607,109278:5,5,5,7,1387,50fc3ad,471b1b8d:2,2,2,2,2,3,3,b,1f,1f,2b,47,b65,2e97,2e97,623b,6b7c2b3,19f8ef1b
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-15476761063,95290:17,c7,5ffb,393187,471b1b8d:2,2,2,2,2,2,3,5,7,7,7,11,13,1f,59,ad,c1,175,409,3581,d375,14cdd,b11f415
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+6260205661,22448:c21c5,18b4fd7,471b1b8d:2,2,2,2,3,5,5,7,13,1d,ef,15d,17f,581,eb7,125a1,22e677f,17bb5327
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-10961135266,69505:b,e5,10187,1c02e9,471b1b8d:2,2,3,3,3,3,3,5,7,13,6b,ef9,37ab,a6df,e01d,12407,3823d,41833eb
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+13275944695,178842:b123dd,255e40b,471b1b8d:2,2,2,2,2,3,3,5,7,1f,e5,39dd,123cb,1752b,18527,c39bd3d,1a945189
+# [descent] This relation entails an additional time of 4.00 for the smoothing process (4 children)
+-9121378530,94877:70e749,2fa7d65,471b1b8d:2,2,3,3,5,7,1f3,3a1,9f5,2665,4b1f,ea4d,d8c89b,1188548b
+# [descent] This relation entails an additional time of 4.00 for the smoothing process (4 children)
+-16130334193,3272:3,5,5,7,b,1f,47,6d,11b,161,471b1b8d:2,2,2,2,11,2b,49,4f,aab,1247,17b3,25ab,6b95,89e7be1,eaf4fab
+19317234266,20813:3,3,4a89,1ea27d6f,471b1b8d:2,2,2,2,2,5,5,5,5,7,7,43,59,af1,4aed,b3cb,edbb,6883f8b,39046d1b
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+19841730347,101908:d,2b,515,d3fdef3,471b1b8d:2,2,2,2,2,3,3,5,b,1f,25,53,bf,257,409,a67,146e9,2ccb1,a646b,1069687
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+2927812635,215794:1f,11ab,217d,849a3,471b1b8d:2,2,2,2,2,3,5,5,5,7,d,115,1b1,50b,52f,23dd,27d1,329c5313,570f114d
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+8863752418,56447:11,13,b999,69d4c5,471b1b8d:2,2,3,3,3,5,5,7,b,d,1f,7f,c1,3a1,69c5,103e1,271b9809,6094bd37
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+18571825559,216063:2,b,527,17387,2ed53,471b1b8d:3,3,2dd,13d5,14d5,1db3,1fb5,2417,e747,15b3105,4e0f8e1b
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+15199795949,71283:2,2,2,1ce9d,674312f,471b1b8d:3,3,3,7,7,29,2b,3d,21d,21d,17b3,244d,ba29,1886b,70127,566b19
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-283927037,142638:5,7,7,7,44f,10bb,d891,471b1b8d:2,2,2,2,2,2,3,3,3,b,1d,43,125,779,9f5,3835,6b95,8f2340b,1a800a0f
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-11489126400,53161:29,283,73c1,5094d,471b1b8d:2,3,5,b,b,11,1f,409,ac1,1ec7,21b3,5e0d,20497,5ca95,1f68803
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+1052568375,78869:2,2,11,3b,539f,2a6b23,471b1b8d:3,3,5,1d,a3,529,805,8bd,99b,5615,a5d3,38657,27acb2e3
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-3789214774,61665:2b3,200e7,258e99,471b1b8d:2,2,2,3,3,5,d,11,11,1f,32b,b89,b43d,1400b,38573,104cb9,69667d
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-3410053607,177042:6859,1fb3d,28f31,471b1b8d:2,2,2,2,2,2,3,3,5,7,1f,3d,49,7f,e5,1ec5,3167,87c5,146c5,3dc87,344f71
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+1125881277,61034:137,19b73,54e965,471b1b8d:2,2,2,2,2,2,3,3,b,13,13,1f,83,a897,11737,1593b,26941,b689f,bc1f7
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+724600709,156116:3,883,abb9,19aac7,471b1b8d:2,2,2,2,2,2,2,2,5,b,b5,313,4cf,b23,11c5,19ab,1df5,284ff3,1b5580c5
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-6870107217,182356:7956af,4b11bf3,471b1b8d:2,2,2,2,2,3,7,7,11,1f,125,1cd,2f5,869,af1,cb5,1a57f,4b82d,e862db7
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-16824850137,165980:4fd,7603,1028fcb,471b1b8d:2,2,2,2,2,2,2,2,3,5,7,d,1f,175,7db,1087,29ab,685d,8eeb,e7f1,248eec55
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+1998370051,39654:64161d,fc1973,471b1b8d:2,2,2,2,2,2,3,3,5,5,7,11,3d,2c5,258d,5ba3,170ef,32d009b,4de5c475
+# [descent] This relation entails an additional time of 4.00 for the smoothing process (4 children)
+8522112502,28257:5,67,191,60d,fe57,471b1b8d:2,2,3,3,3,d3,167,a93,20a1,a939,13381,16ec1,47f1a9,a34617
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+11484689891,227002:d,d,21fa9,19238c3,471b1b8d:2,2,2,2,2,3,7,b,13,49,2c5,515,62b,935,1639,16db,dbf055f,1a239f31
+-11352360823,68755:2,2,1df,177b,194e9eb,471b1b8d:3,5,7,b,25,2b,335,58f,1367,621d,908b,347b3db7,586f404b
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+74851553,71076:79d,1d71,e6b607,471b1b8d:2,2,2,2,2,2,2,3,3,3,b,b,1f,a7ed,11cf5,139f1,c81a3,18ed11,1aaa4b
+# [descent] This relation entails an additional time of 1.00 for the smoothing process (1 children)
+10893160641,49790:bf,1178b,4d8a4d,471b1b8d:2,2,2,2,2,3,5,7,7,7,11,2ab,2527,7597,834d,154d5,963c49,1d11d735
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-13063104,49163:13,49,71,3a9ef877,471b1b8d:2,3,5,7,11,11,17,17,5a7,1fbb,104bf,137fb,39e753,4a41deb5
+-1286771799,4760:1f3,2fb3,3ef327,471b1b8d:2,2,2,2,3,3,3,3,5,2f,6b,175,1253,53f5,abd3,3ed22f9,273acb97
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+14902907035,92934:2bf9,31d5,125beb,471b1b8d:2,2,2,2,2,2,3,3,5,5,7,13,17,29,2f,49,1609,210d,4133,18bdd,507397,a6fa2d
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+-14458977955,48913:2,b,1245a7,9b4db1,471b1b8d:3,5,5,d,1f,3b,43,1f3,64d,2ab9,564d,a4b9,12989e9,73e4cb6b
+# [descent] This relation entails an additional time of 3.00 for the smoothing process (3 children)
+-727275600,14953:b,b,b,1c1,829,a4ad,471b1b8d:2,3,5,7,17,1f,49,337,61f,4e8b,e4cd,66491,7b5bd,94885
+# [descent] This relation entails an additional time of 0.00 for the smoothing process (0 children)
+# [descent] Yiippee, splitting done
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+# [descent] This relation entails an additional time of 2.00 for the smoothing process (2 children)
+# Taking decision on 31@0 side-0 q=1192958861; rho=816505495
+Taken: -727275600,14953:b,b,b,1c1,829,a4ad,471b1b8d:2,3,5,7,17,1f,49,337,61f,4e8b,e4cd,66491,7b5bd,94885
+# taking path: 31@0 -> done	side-0 q=1192958861; rho=816505495
+# BEGIN TREE
+# . 31@0 1.4808	side-0 q=1192958861; rho=816505495
+# END TREE
+# 80 relation(s)
+# Time for side-0 q=1192958861; rho=816505495: (1.4 elapsed) 1.54s
+# subjob 0 done (5 special-q's), now waiting for other jobs
+# BEGIN SUMMARY TREE [npending=0, created=5 pulled=5 done=5 abandoned=0]
+# [ROOT NODE]
+# . 20@0 1.3875	side-0 q=831653; rho=477964
+# . 26@0 1.3833	side-0 q=45065021; rho=15882844
+# . 31@0 1.4808	side-0 q=1192958861; rho=816505495
+# . 32@0 2.2262	side-0 q=2962091003; rho=1160866331
+# . 39@0 1.5049	side-0 q=380238767611; rho=129512166772
+# END SUMMARY TREE
+# The status of the root node is IN_RECURSION
+# Average logI=11.0 for 5 special-q's, max bucket fill -bkmult 1,1s:1.276
+# Discarded 0 special-q's out of 5 pushed
+# Wasted cpu time due to 5 bkmult adjustments: 1.58
+# Cumulated wait time over all threads 0.13
+# Total cpu time 7.99s, useful 6.31s [norm 0.01+0.0, sieving 0.6 (0.3+0.3 + 0.0), factor 0.1 (0.0+0.0 + 0.1), rest 0.4], wasted+waited 1.71s, rest -0.03s
+# Total elapsed time 7.88s, per special-q 1.57635, per relation 0.0396069
+# PeakMemusage (MB) = 10685
+# Total 199 reports [0.0401s/r, 39.0r/sq] in 7.88 elapsed s [101.3% CPU]

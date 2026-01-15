@@ -21,7 +21,7 @@ Outside Google Colab these are commmon errors encountered with CADO-NFS:
 I demonstrate workarounds in the [CADO-NFS DLP article](https://leetarxiv.substack.com/p/cado-nfs-dlp-comprehensive-tutorial).
 
 ### Important note
-For the bitcoin filed characteristic prime it takes
+The 256-bit bitcoin field characteristic prime takes:
 - 1hr 20 minutes to generate logs on Google Colab.
 - 40 minutes on Runpod and it costs 0.06$/hr for the 2core, 4GB RAM machine.
 - 4 hours on my personal computer (fml)

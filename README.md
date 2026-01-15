@@ -20,8 +20,37 @@ Outside Google Colab these are commmon errors encountered with CADO-NFS:
 I demonstrate workarounds in the [CADO-NFS DLP article](https://leetarxiv.substack.com/p/cado-nfs-dlp-comprehensive-tutorial).
 
 ### Important note
-On Colab, for the bitcoin prime, it takes 1hr 20 minutes to generate logs
-On Runpod, it take 20 minutes and it only costs 0.06$/hr for the 22core, 4GB RAM cpu lol.
+For the bitcoin filed characteristic prime it takes
+- 1hr 20 minutes to generate logs on Google Colab.
+- 40 minutes on Runpod and it costs 0.06$/hr for the 2core, 4GB RAM machine.
+- 4 hours on my personal computer (fml)
+
+## Getting Started
+Absolute beginners should follow the Google Colab notebook. 
+
+Non-noobs who want complete control should follow the Runpod/local installation approach.
+
+### Local Installation / Runpod Approach
+Do NOT clone the repo. The bash installation script may fail due to lots of subtle installation gotchas.
+
+I suggest following the [step-by-step installation guide](https://leetarxiv.substack.com/p/cado-nfs-dlp-comprehensive-tutorial) but if you're feeling lucky then this works on Runpod:
+
+1. Enter the home directory
+```
+cd home
+```
+2. Download the raw installation bash script
+```
+wget https://raw.githubusercontent.com/MurageKibicho/CADONFS-Runpod-Google-Colab/refs/heads/main/InstallCADO_Runpod_Ubuntu.sh
+```
+3. Make `InstallCADO_Runpod_Ubuntu.sh` executable
+```
+chmod +x InstallCADO_Runpod_Ubuntu.sh
+```
+4. Run `InstallCADO_Runpod_Ubuntu.sh` executable
+```
+./InstallCADO_Runpod_Ubuntu.sh
+```
 
 
 

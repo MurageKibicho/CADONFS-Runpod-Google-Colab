@@ -98,7 +98,7 @@ git clone https://github.com/MurageKibicho/CADONFS-Runpod-Google-Colab.git
 ```
 2. Navigate to the repo
 ```
-cd CADONFS-Runpod-Google-Colab
+cd /home/CADONFS-Runpod-Google-Colab
 ```
 3. Move the folder `murage` to home
 ```

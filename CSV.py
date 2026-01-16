@@ -2,7 +2,7 @@
 import csv
 import math
 import subprocess
-cadoFolder = "/home/cado-nfs/build/murage"
+cadoFolder = "/home/cado-nfs/build/c65b414053c9"
 cadoScript = "cado-nfs.py"
 logsPath = "/home/murage/p95.parameters_snapshot.1"
 filename = 'dataset.csv'

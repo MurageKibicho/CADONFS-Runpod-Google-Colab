@@ -8,8 +8,8 @@ datasetIndex = 0
 cadoFolder = "/home/cado-nfs/build/c65b414053c9"
 cadoScript = "cado-nfs.py"
 logsPath = "/home/murage/p95.parameters_snapshot.1"
-filename = f'dataset135_{datasetIndex}.csv'
-storage  = f'storage135_{datasetIndex}_{start}.csv'
+filename = f'dataset135_{datasetIndex}_115.csv'
+storage  = f'storage135_{datasetIndex}_{start}_115.csv'
 
 def CadoSnapshotLog(cadoFolder, cadoScript, logsPath, target,ell, primeNumber):
     cmd = [f"./{cadoScript}", logsPath, f"target={target}"]

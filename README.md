@@ -37,6 +37,7 @@ Do NOT clone the repo. The bash installation script may fail due to lots of subt
 I suggest following the [step-by-step installation guide](https://leetarxiv.substack.com/p/cado-nfs-dlp-comprehensive-tutorial) but if you're feeling lucky then this works on Runpod:
 
 It takes ~25 minutes for a clean Runpod installation.
+(It takes 5 minutes on Runpod Euro1 idk how)
 
 1. Enter the home directory
 ```

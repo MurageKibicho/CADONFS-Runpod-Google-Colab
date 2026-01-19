@@ -1,16 +1,13 @@
-#Runpod Dataset Manipulator
 #Read data file 55 
 import csv
 import math
 import subprocess
-start = 0
-datasetIndex = 0
 cadoFolder = "/home/cado-nfs/build/c65b414053c9"
 cadoScript = "cado-nfs.py"
 logsPath = "/home/murage/p95.parameters_snapshot.1"
-filename = f'dataset135_{datasetIndex}.csv'
-storage  = f'storage135_{datasetIndex}_{start}.csv'
-
+filename = 'dataset.csv'
+storage  = 'storage.csv'
+start = 0
 def CadoSnapshotLog(cadoFolder, cadoScript, logsPath, target,ell, primeNumber):
     cmd = [f"./{cadoScript}", logsPath, f"target={target}"]
     #print("Running command:", " ".join(cmd))
@@ -37,6 +34,7 @@ def ConvertToBaseC(target_log_base_unkown):
 bit_lengths = []
 total_bits = []
 random_multipliers = []
+lhs_values = []
 rhs_values = []
 
 ell =205115282021455665897114700593932402728804164701536103180137503955397371
@@ -48,14 +46,22 @@ with open(filename, 'r') as csvfile:
         bit_lengths.append(int(row[0]))        
         total_bits.append(int(row[1]))        
         random_multipliers.append(int(row[2])) 
-        rhs_values.append(int(row[3]))        
+        lhs_values.append(int(row[3]))        
+        rhs_values.append(int(row[4]))        
 print(f"Read {len(bit_lengths)} rows")
 
 with open(storage, 'w', newline='') as csvfile:
     csvwriter = csv.writer(csvfile)
     for i in range(start, len(bit_lengths)):
+        logbase, lhs1_projection_log_base_unkown = CadoSnapshotLog(cadoFolder, cadoScript, logsPath, lhs_values[i], ell, primeNumber)
         logbase, rhs_projection_log_base_unkown  = CadoSnapshotLog(cadoFolder, cadoScript, logsPath, rhs_values[i], ell, primeNumber)
+        lhs1_projection_log_base_c = ConvertToBaseC(lhs1_projection_log_base_unkown)
         rhs_projection_log_base_c  = ConvertToBaseC(rhs_projection_log_base_unkown)
-        print(f"{bit_lengths[i]}, {total_bits[i]} : {random_multipliers[i]}, {rhs_values[i]},{rhs_projection_log_base_c}")
-        csvwriter.writerow([i, rhs_projection_log_base_c])
+        print(f"{bit_lengths[i]}, {total_bits[i]} : {random_multipliers[i]}, {lhs_values[i]}, {rhs_values[i]}, {lhs1_projection_log_base_c}, {rhs_projection_log_base_c}")
+        csvwriter.writerow([i, lhs1_projection_log_base_c, rhs_projection_log_base_c])
+
+
+
+
+
 

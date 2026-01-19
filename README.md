@@ -115,7 +115,11 @@ mv old_folder_name c65b414053c9
 ```
 cd /home/cado-nfs
 ```
-6. If everything is working correctly then this should yield a result
+6. Ensure venv is active
+```
+source cado-nfs.venv/bin/activate
+```
+7. If everything is working correctly then this should yield a result
 ```
 ./cado-nfs.py /home/murage/p95.parameters_snapshot.1 target=546456546
 ```

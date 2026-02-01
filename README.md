@@ -35,9 +35,10 @@ Non-noobs who want complete control should follow the Runpod/local installation 
 Do NOT clone the repo. The bash installation script may fail due to lots of subtle installation gotchas.
 
 I suggest following the [step-by-step installation guide](https://leetarxiv.substack.com/p/cado-nfs-dlp-comprehensive-tutorial) but if you're feeling lucky then this works on Runpod:
-
-It takes ~25 minutes for a clean Runpod installation.
+### Runpod Tips
+1. It takes ~25 minutes for a clean Runpod installation in US/KS.
 (It takes 5 minutes on Runpod Euro1 idk how)
+2. The server keeps crashing. At startup, untick the 'Start Jupyter Notebook' checkbox. idk why this lowers crashes.
 
 1. Enter the home directory
 ```

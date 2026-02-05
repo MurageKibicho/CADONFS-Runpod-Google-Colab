@@ -40,6 +40,7 @@ I suggest following the [step-by-step installation guide](https://leetarxiv.subs
 (It takes 5 minutes on Runpod Euro1 idk how)
 2. The server keeps crashing. At startup, untick the 'Start Jupyter Notebook' checkbox. idk why this lowers crashes.
 
+## Runpod Installation steps
 1. Enter the home directory
 ```
 cd /home
